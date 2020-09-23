@@ -1,0 +1,53 @@
+@import "../common/animations.scss";
+@import "../common/variables.scss";
+
+.navigation {
+	width: 100%;
+
+	&__list {
+		position: relative;
+		height: 5rem;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr auto auto 1%;
+		justify-items: center;
+		align-items: center;
+
+		& > li {
+			&:first-of-type {
+				justify-self: right;
+				padding-right: 0.5rem;
+			}
+		}
+	}
+
+	&__home {
+		&--active .navigation__icon {
+			color: $primary-light-40;
+		}
+	}
+
+	&__icon {
+		color: $white;
+		font-size: 2.2rem;
+		vertical-align: middle;
+	}
+
+	&__link {
+		display: block;
+		font-size: 1.6rem;
+		color: $white;
+		font-weight: 700;
+		padding: 1rem;
+
+		&:focus,
+		&:active {
+			color: $primary-light-20;
+		}
+
+		&--active {
+			animation: link-active 0.2s ease-out;
+			color: $primary-light-40;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@import "../common/variables.scss";
+@import "../common/animations.scss";
+
+.greet {
+	font-family: "Long Cang";
+	position: relative;
+	color: $primary-dark-20;
+	font-weight: 400;
+	font-size: 5rem;
+	padding: 2rem;
+	text-align: center;
+	max-width: 80rem;
+	animation: transition-in-bottom 1s cubic-bezier(0, 1, 1, 1);
+
+	&__sun {
+		color: darken(yellow, 5%);
+		font-size: 4rem;
+		animation: sunlight 2s cubic-bezier(1, 0, 1, 1);
+		animation: glow 2s linear 2s infinite;
+	}
+
+	&__tree {
+		font-size: 3.5rem;
+		display: inline-block;
+		transform-origin: 0 100%;
+		animation: treeshake 5s linear infinite;
+	}
+}

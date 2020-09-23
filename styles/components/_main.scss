@@ -1,0 +1,33 @@
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+.main {
+	&__action {
+		font-size: 3rem;
+		font-weight: 700;
+		vertical-align: center;
+
+		&-icon {
+			font-size: 2rem;
+			vertical-align: middle;
+			transform: translateY(-0.2rem);
+		}
+	}
+
+	&--home {
+		@extend .flex-center;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+
+	&--projects,
+	&--credentials {
+		margin: auto;
+		margin-top: 2rem;
+		width: 90%;
+		@media screen and (max-width: 24rem) {
+			padding: 0.5rem;
+			margin-top: initial;
+			width: 100%;
+		}
+	}
+}

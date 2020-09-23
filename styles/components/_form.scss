@@ -1,0 +1,57 @@
+@import "../common/variables.scss";
+@import "../common/mixins.scss";
+
+.form {
+	width: 100%;
+	&__container {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		// box-shadow: 0.3rem 0.3rem 0.6rem $shadow-inactive;
+		@extend .flex-center;
+		flex-direction: column;
+		border-radius: 1rem;
+
+		&--prompt {
+			@extend .form__container;
+			box-shadow: none;
+			padding: 0;
+		}
+	}
+
+	&__spinner {
+		height: 5rem;
+		width: 7rem;
+	}
+
+	&__toolkit {
+		margin-bottom: 1rem;
+		font-size: 1.5rem;
+		color: $danger-light-30;
+	}
+
+	&__error {
+		margin-bottom: 1rem;
+		color: $danger-light-30;
+	}
+
+	&__actions {
+		grid-area: actions;
+		padding: $grid-container-padding;
+		width: 100%;
+		// @extend .flex-center;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	&__action {
+		width: 20%;
+	}
+
+	&__spinner {
+		margin: auto;
+		width: 5rem;
+		height: 5rem;
+	}
+}
