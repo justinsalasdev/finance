@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Toolbar from "../components/Toolbar"
+// import Toolbar from "../components/Toolbar"
 import BurgerBuilder from "../components/projects/BurgerBuilder"
 import Natours from "../components/projects/Natours"
 import Nexter from "../components/projects/Nexter"

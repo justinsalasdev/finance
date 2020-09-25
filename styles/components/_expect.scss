@@ -1,0 +1,40 @@
+@import "../common/variables.scss";
+
+.expect {
+	// background-color: white;
+	// margin-left: 20%;
+	// align-self: flex-start;
+	width: 60%;
+	font-size: 1.7rem;
+
+	.icon {
+		vertical-align: center;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+	}
+
+	&__heading {
+		font-size: 5rem;
+		font-weight: 400;
+		font-family: "just another hand";
+		// text-align: center;
+	}
+
+	&__item {
+		margin-bottom: 1rem;
+		padding: 1.5rem;
+
+		h3 {
+			// display: inline-block;
+			border-bottom: 1px solid rgba(black, 0.2);
+			margin-bottom: 0.5rem;
+		}
+
+		p {
+			text-indent: 5%;
+		}
+	}
+}

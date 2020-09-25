@@ -1,6 +1,9 @@
 @import "../common/variables.scss";
 @import "../common/mixins.scss";
 .main {
+	&__greet {
+		margin-top: 5rem;
+	}
 	&__action {
 		font-size: 3rem;
 		font-weight: 700;
@@ -13,8 +16,19 @@
 		}
 	}
 
+	&__articles {
+		margin-top: 2rem;
+	}
+
+	&__expect {
+		margin-top: 1rem;
+	}
+
 	&--home {
-		@extend .flex-center;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		// @extend .flex-center;
 		flex-direction: column;
 		flex-wrap: wrap;
 	}

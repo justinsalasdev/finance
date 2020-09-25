@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Course from "../components/Course"
-import Toolbar from "../components/Toolbar"
+// import Toolbar from "../components/Toolbar"
 
 const courses = [
 	{

@@ -44,20 +44,17 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-// @import "./components/brand";
-@import "./components/completed";
-@import "./components/project";
-@import "./components/projects";
+@import "./components/articles";
+@import "./components/rule";
+@import "./components/expect";
 @import "./components/greet";
 @import "./components/root";
 @import "./components/main";
-@import "./components/footer";
 @import "./components/prompt";
 @import "./components/button";
 @import "./components/form";
 @import "./components/input";
 // @import "./components/link";
-@import "./components/toolbar";
 @import "./components/navigation";
 // @import "./components/loader";
 @import "./components/spinner";

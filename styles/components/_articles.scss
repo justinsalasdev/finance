@@ -1,0 +1,48 @@
+@import "../common/variables.scss";
+.articles {
+	width: 60%;
+	.icon {
+		font-size: 2rem;
+		vertical-align: middle;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+	}
+	&__item {
+		margin: 1rem;
+		box-shadow: 0.2rem 0.2rem 1.2rem $shadow-inactive;
+		background-color: rgba(white, 0.8);
+		transition: box-shadow transform 0.2s ease-in;
+		&:hover {
+			transform: scale(1.03);
+			box-shadow: 0.4rem 0.4rem 1.8rem $shadow-inactive;
+		}
+
+		h3 {
+			font-size: 1.7rem;
+			// font-family: "just another hand";
+			font-weight: 400;
+			padding: 1rem;
+			color: $white;
+			background-color: rgba($black-light-10, 0.8);
+		}
+
+		p {
+			color: $black-light-20;
+			text-indent: 2rem;
+			padding: 1rem;
+		}
+
+		a {
+			color: lighten(blue, 30%);
+			padding: 0.5rem;
+
+			&:active,
+			&:focus {
+				font-weight: bold;
+			}
+		}
+	}
+}

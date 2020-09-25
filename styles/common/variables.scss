@@ -17,6 +17,9 @@ $grid-container-padding: 1rem;
 $label-left-offset: 1.7rem;
 
 $red: #ed1b2e;
+$black: black;
+$black-light-10: lighten(black, 10%);
+$black-light-20: lighten(black, 20%);
 
 $danger: #d92027;
 $danger-light-10: lighten($danger, 10%);
@@ -41,7 +44,7 @@ $info-light-5: lighten($info, 5%);
 $info-light-30: lighten($info, 30%);
 
 //------------------------------------------------
-$primary: #13aa52; //oxford-blue
+$primary: #ed1b2e; //oxford-blue
 $primary-light-20: lighten($primary, 20%);
 $primary-light-30: lighten($primary, 30%);
 $primary-light-40: lighten($primary, 40%);

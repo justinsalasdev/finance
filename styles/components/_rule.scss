@@ -1,0 +1,13 @@
+@import "../common/variables.scss";
+hr {
+	margin-top: 7rem;
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(
+		to right,
+		rgba($black-light-10, 0),
+		$black-light-10,
+		rgba($black-light-10, 0)
+	);
+	width: 70%;
+}

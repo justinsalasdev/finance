@@ -5,13 +5,13 @@
 	display: inline-block;
 	font-family: inherit;
 	font-size: inherit;
-	border: none;
+	border: 2px solid $red;
 	min-width: 8rem;
-	box-shadow: 0.2rem 0.2rem 0.4rem $shadow-inactive;
+	box-shadow: 0.3rem 0.3rem 0.6rem $shadow-inactive;
 	outline: none;
 	border-radius: 0.5rem;
 	cursor: pointer;
-	padding: 0.8rem 1rem;
+	padding: 0.6rem 1rem;
 
 	&:active {
 		box-shadow: 0.1rem 0.1rem 0.2rem $shadow-active;
@@ -29,7 +29,8 @@
 
 	&--success {
 		@extend .button;
-		background-color: $primary;
+		// background-color: rgba(white, 0.4);
+		background-color: $red;
 		color: $white;
 	}
 
