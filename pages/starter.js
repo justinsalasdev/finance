@@ -97,6 +97,9 @@ export default function Starter() {
 						At this point, I know I was prepared to make my first reasonable
 						purchase but I can't help to think that there might still be good
 						books out there that I missed -- and I was right
+						<br />
+						<br />
+						Here are the few more good reads I've found :
 					</p>
 					<ul className="blog__books">
 						<li className="blog__oneup">

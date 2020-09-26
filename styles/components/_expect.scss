@@ -1,11 +1,13 @@
 @import "../common/variables.scss";
 
 .expect {
-	// background-color: white;
-	// margin-left: 20%;
-	// align-self: flex-start;
 	width: 60%;
+	padding: 1rem;
 	font-size: 1.7rem;
+
+	@media screen and (max-width: 41.93em) {
+		width: 100%;
+	}
 
 	.icon {
 		vertical-align: center;
@@ -14,6 +16,13 @@
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+
+		@media screen and (max-width: 24em) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
 	&__heading {

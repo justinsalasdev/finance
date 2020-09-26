@@ -2,17 +2,17 @@
 @import "../common/variables.scss";
 
 .navigation {
+	position: fixed;
 	&__home {
+		position: fixed;
+		top: 2rem;
+		right: 3rem;
 		@extend .flex-center;
 		width: 4.5rem;
 		height: 4.5rem;
 		background-color: $primary;
 		border-radius: 20rem;
-		position: fixed;
-		top: 2rem;
-		right: 3rem;
 		box-shadow: 0.4rem 0.4rem 1.2rem $shadow-inactive;
-
 		&:active {
 			box-shadow: 0.2rem 0.2rem 0.8rem $shadow-inactive;
 		}

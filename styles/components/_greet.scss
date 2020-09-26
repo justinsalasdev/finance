@@ -10,9 +10,12 @@
 	font-size: 5.5rem;
 	padding: 2rem;
 	text-align: center;
-	width: 70%;
 	max-width: 70rem;
 	animation: transition-in-bottom 1s cubic-bezier(0, 1, 1, 1);
+
+	@media screen and (max-width: 40rem) {
+		width: 100%;
+	}
 
 	&__sun {
 		vertical-align: center;
