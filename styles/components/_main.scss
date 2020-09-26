@@ -4,6 +4,7 @@
 	&__greet {
 		margin-top: 5rem;
 	}
+
 	&__action {
 		font-size: 3rem;
 		font-weight: 700;
@@ -23,6 +24,9 @@
 	&__expect {
 		margin-top: 1rem;
 	}
+	&--blog {
+		padding-top: 2rem;
+	}
 
 	&--home {
 		display: flex;
@@ -31,17 +35,5 @@
 		// @extend .flex-center;
 		flex-direction: column;
 		flex-wrap: wrap;
-	}
-
-	&--projects,
-	&--credentials {
-		margin: auto;
-		margin-top: 2rem;
-		width: 90%;
-		@media screen and (max-width: 24rem) {
-			padding: 0.5rem;
-			margin-top: initial;
-			width: 100%;
-		}
 	}
 }

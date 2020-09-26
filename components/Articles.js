@@ -1,6 +1,6 @@
 import { MdEventBusy } from "react-icons/md"
 import { GiBookshelf } from "react-icons/gi"
-import { FaUserTie } from "react-icons/fa"
+import { FcBusinessman } from "react-icons/fc"
 import { FaSearchDollar } from "react-icons/fa"
 import Link from "next/link"
 export default function Articles() {
@@ -12,8 +12,8 @@ export default function Articles() {
 						<FaSearchDollar /> I wonder where my money went
 					</h3>
 					<p>
-						You're quite sure you didn't over spent but still, at the end of the
-						day, your money magically disappears. Oh why?
+						You're quite sure you didn't over spent but still, at the end of
+						each month, your money magically disappears. Oh why?
 					</p>
 					<Link href="/track">
 						<a className="articles__link">read more</a>
@@ -46,7 +46,7 @@ export default function Articles() {
 
 				<li className="articles__item">
 					<h3>
-						<FaUserTie /> How to be a financial consultant
+						<FcBusinessman /> How to be a Financial Consultant
 					</h3>
 					<p>
 						Be prepared to know how to launch yourself to what may be one of the

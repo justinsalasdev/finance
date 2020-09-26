@@ -10,4 +10,9 @@ hr {
 		rgba($black-light-10, 0)
 	);
 	width: 70%;
+
+	&.blog {
+		margin-top: 1rem;
+		margin: auto;
+	}
 }

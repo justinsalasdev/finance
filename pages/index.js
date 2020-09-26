@@ -91,7 +91,6 @@ export default function Home() {
 					content="A licensed financial consultant"
 				/>
 			</Head>
-			{/* <Toolbar /> */}
 			<Navigation />
 			<main className="main main--home">
 				<h1 className="greet main__greet">
@@ -108,9 +107,9 @@ export default function Home() {
 					<FaRegCalendarCheck className="main__action-icon" /> Set an
 					appointment
 				</button>
-				<hr className="style14" />
+				<hr />
 				<Expect />
-				<hr className="style14" />
+				<hr />
 				<Articles />
 			</main>
 			{/* <footer className="footer">
