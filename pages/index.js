@@ -64,7 +64,7 @@ export default function Home() {
 				<title>justinsalas | Home</title>
 				<link
 					rel="shortcut icon"
-					href="/icons/leafPNG64.png"
+					href="/icons/favicon.ico"
 					type="image/x-icon"
 				/>
 				<meta name="author" content="Justin Salas" />
@@ -77,7 +77,7 @@ export default function Home() {
 				<meta property="og:url" content="https://justinsalas.cc" />
 				<meta
 					property="og:image"
-					content="https://justinsalas.cc/icons/leafPNG512.png"
+					content="https://justinsalas.cc/images/umbrella.jpg"
 				/>
 				<meta property="profile:first_name" content="Justin" />
 				<meta property="profile:last_name" content="Salas" />
