@@ -1,0 +1,8 @@
+.link {
+	&--text {
+		color: lighten(blue, 10%);
+	}
+	&--text-light {
+		color: lighten(blue, 30%);
+	}
+}

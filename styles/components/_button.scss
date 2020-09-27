@@ -5,7 +5,7 @@
 	display: inline-block;
 	font-family: inherit;
 	font-size: inherit;
-	border: 2px solid $red;
+	border: none;
 	min-width: 8rem;
 	box-shadow: 0.3rem 0.3rem 0.6rem $shadow-inactive;
 	outline: none;
@@ -30,13 +30,13 @@
 	&--success {
 		@extend .button;
 		// background-color: rgba(white, 0.4);
-		background-color: $red;
+		background-color: $primary;
 		color: $white;
 	}
 
 	&--danger {
 		@extend .button;
-		background-color: $danger-light-10;
-		color: $white;
+		background-color: $white;
+		color: $primary;
 	}
 }

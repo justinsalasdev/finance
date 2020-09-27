@@ -4,26 +4,40 @@ import * as Yup from "yup"
 import FormInput from "./FormInput"
 import Spinner from "./Spinner"
 
+const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g
+const mobileNumberRegex = /^(09|\+639)\d{9}$/
 const schema = Yup.object({
-	email: Yup.string()
-		.email("is invalid")
+	firstName: Yup.string()
 		.required("is required")
-		.max(64, "must not be longer than 20 characters")
+		.matches(nameRegex, "is not valid"),
+	lastName: Yup.string()
+		.required("is required")
+		.matches(nameRegex, "is not valid"),
+	mobileNumber: Yup.string()
+		.required("is required")
+		.matches(mobileNumberRegex, "is not valid"),
+
+	email: Yup.string().email("is invalid").required("is required")
 })
 
 export default function Form({ showForm, saveEmail, state, dispatch }) {
 	const { error, saving } = state
 	const methods = useForm({
 		mode: "all",
+		defaultValues: {
+			date: new Date().toISOString()
+		},
 		resolver: yupResolver(schema)
 	})
 
-	const { handleSubmit, errors: formErrors } = methods
+	const { watch, register, handleSubmit, errors: formErrors } = methods
 
 	function handleCancel() {
 		dispatch({ type: "acknowledge" })
 		showForm(false)
 	}
+
+	console.log(watch("date"))
 
 	//saveEmail automatically receives form data as argument
 	return (
@@ -34,9 +48,19 @@ export default function Form({ showForm, saveEmail, state, dispatch }) {
 
 			<FormProvider {...methods}>
 				<form onSubmit={handleSubmit(saveEmail)} className={`form`}>
+					<FormInput type="text" id="firstName">
+						First Name
+					</FormInput>
+					<FormInput type="text" id="lastName">
+						Last Name
+					</FormInput>
 					<FormInput type="text" id="email">
 						Email
 					</FormInput>
+					<FormInput type="text" id="mobileNumber">
+						Mobile #
+					</FormInput>
+					<input type="datetime-local" ref={register} name="date" />
 
 					<div className="form__actions">
 						<button

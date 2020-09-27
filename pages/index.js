@@ -45,16 +45,7 @@ export default function Home() {
 					barModifier={saved ? "success" : "pending"}
 					acknowledge={acknowledgeSuccess}
 					type={saved ? "single" : ""}
-					message1={
-						saved
-							? ""
-							: `Your developer can't take any more projects at the moment.`
-					}
-					message2={
-						saved
-							? "Thank you! I'll keep you updated"
-							: "Let me give you an update."
-					}
+					message1="Let me reach out to you"
 				>
 					<Form {...formProps} />
 				</Prompt>

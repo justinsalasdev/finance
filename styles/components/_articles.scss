@@ -10,6 +10,14 @@
 		vertical-align: middle;
 	}
 
+	&__heading {
+		margin-left: 1rem;
+		font-size: 5rem;
+		font-weight: 400;
+		font-family: "just another hand";
+		// text-align: center;
+	}
+
 	&__list {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));

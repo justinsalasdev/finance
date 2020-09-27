@@ -1,4 +1,5 @@
 import Navigation from "../components/Navigation"
+import Link from "next/link"
 
 export default function Busy() {
 	return (
@@ -9,13 +10,15 @@ export default function Busy() {
 				<hr className="blog" />
 				<div className="blog__body">
 					<p className="blog__content">
-						I learned how to invest on my own in 2015. I bought shares from few
-						companies that I like from hundreds that I looked into.Every year, I
-						update the list of the companies I like based on their annual
-						reports. Every quarter, I also check the interim reports of the
-						companies in my portfolio just to check if there's something I need
-						to worry about. This has been my not so demanding routine in the
-						last 5 years
+						<Link href="/starter">
+							<a className="link--text">I learned how to invest on my own</a>
+						</Link>{" "}
+						in 2015. I bought shares from few companies that I like from
+						hundreds that I looked into. Every year, I update the list of the
+						companies I like based on their annual reports. Every quarter, I
+						also check the interim reports of the companies in my portfolio just
+						to check if there's something I need to worry about. This has been
+						my not so demanding routine in the last 5 years
 					</p>
 					<p className="blog__content">
 						Investing, to me, is important that's why I learned how to better do
@@ -25,8 +28,15 @@ export default function Busy() {
 					</p>{" "}
 					<h3 className="blog__heading2">Being passive is good too </h3>
 					<p className="blog__content blog__content--quotes">
-						Let me share an article from Investopedia based on Bejamin Graham's
-						teachings
+						Let me share an{" "}
+						<a
+							className="link--text"
+							href="article from Investopedia"
+							target="_blank"
+						>
+							article from Investopedia
+						</a>{" "}
+						based on Bejamin Graham's teachings
 					</p>
 					<p className="blog__content blog__content--quote">
 						You only have two real choices: the first choice is to make a
@@ -70,9 +80,16 @@ export default function Busy() {
 					</h3>{" "}
 					<p className="blog__content">
 						In simple terms, an Index Fund's performance (gains / losses) is a
-						reflection of the Philippine Stock Market performance in general
-						--so if, for example, you bought 1 unit of the fund that cost P100
-						in 2019, you would have lost 20% already as of 2020.
+						reflection of the{" "}
+						<a
+							href="https://www.wsj.com/market-data/quotes/index/PH/PSEI"
+							target="_blank"
+							className="link--text"
+						>
+							Philippine Stock Market performance
+						</a>{" "}
+						in general --so if, for example, you bought 1 unit of the fund that
+						cost P100 in 2019, you would have lost 20% already as of 2020.
 					</p>{" "}
 					<div className="blog__graphics"></div>
 					<p className="blog__content">
@@ -82,30 +99,41 @@ export default function Busy() {
 						stock market in general then it's better to stay away from it - or
 						you find someone who does.
 					</p>
-					<h3 className="blog__heading2">MUTUAL FUNDS</h3>
-					<p className="blog__content">
-						You might have heard or have read about this somewhere but in case
-						you haven't, here's what my simple mind understands
-					</p>
-					<ul>
-						<li>
-							People give their seeds (their money) to a farmer (professional
-							money manager)
-						</li>
-						<li>
-							The farmer collectively plants (invest) and grows (manage) those
-							seeds in behalf of the owners
-						</li>
-						<li>The owners pays the corresponding labor cost</li>
-					</ul>
+					<h3 className="blog__heading2">Mutual Funds</h3>
+					<div className="blog__content blog__content--mutual">
+						You might have heard or have read about mutual funds somewhere but
+						in case you haven't, here's what my simple mind understands
+						<ul>
+							<li className="picture picture--seed">
+								People give their saplings ( their money ) to a farmer{" "}
+								<a
+									className="link--text-light"
+									target="_blank"
+									href="https://www.investopedia.com/terms/m/moneymanager.asp#:~:text=key%20takeaways-,A%20money%20manager%20is%20a%20person%20or%20financial%20firm%20that,percentage%20of%20assets%20under%20management."
+								>
+									( Professional Money Manager )
+								</a>
+							</li>
+
+							<li className="picture picture--collect">
+								The farmer collectively plants (invest) and grows (manage) those
+								seeds in behalf of the owners
+							</li>
+
+							<li className="picture picture--labor">
+								The owners give the farmer small portion of their crops to cover
+								operating cost
+							</li>
+						</ul>
+					</div>
 					<p className="blog__content">
 						Getting started on mutual funds is easy given that we live in a time
-						where most of the information you we need is right at our finger
-						tips. Fortunately, if you're the type of person who understand the
+						where most of the information we need is right at our finger tips.
+						Fortunately, if you're the type of person who understand the
 						importance of investments but doesn't have time other than for those
-						things you love to do; you can always seek guidance from financial
-						consultants. We would be more than happy to share our knowledge with
-						you
+						things you love to do; you can always seek guidance from us,
+						licensed financial consultants -- our goal is help people make
+						better personal financial decisions.
 					</p>
 				</div>
 			</main>
