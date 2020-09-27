@@ -93,7 +93,7 @@ export default function Busy() {
 					</p>{" "}
 					<div className="blog__graphics"></div>
 					<p className="blog__content">
-						The stock market is crazy. Like a women, you'll never know what she
+						The stock market is crazy. Like a woman, you'll never know what she
 						thinks but understanding why she's like that is more than enough.
 						Therefore, if you are not interested on the inner workings of the
 						stock market in general then it's better to stay away from it - or

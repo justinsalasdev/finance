@@ -1,6 +1,6 @@
 import { MdEventBusy } from "react-icons/md"
 import { GiBookshelf } from "react-icons/gi"
-import { FcBusinessman } from "react-icons/fc"
+import { FaBlackTie } from "react-icons/fa"
 import { FaSearchDollar } from "react-icons/fa"
 import Link from "next/link"
 export default function Articles() {
@@ -34,7 +34,7 @@ export default function Articles() {
 				</li>
 				<li className="articles__item">
 					<h3>
-						<GiBookshelf /> Investing - from scratch
+						<GiBookshelf className="icon" /> Investing - from scratch
 					</h3>
 					<p>
 						You want to learn investing but not sure where to start? Here's how
@@ -47,7 +47,7 @@ export default function Articles() {
 
 				<li className="articles__item">
 					<h3>
-						<FcBusinessman /> How to be a Financial Consultant
+						<FaBlackTie className="icon" /> How to be a Financial Consultant
 					</h3>
 					<p>
 						Be prepared to know how to launch yourself to what may be one of the

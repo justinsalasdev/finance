@@ -2,6 +2,10 @@
 .blog {
 	color: black-light-20;
 
+	.icon {
+		vertical-align: middle;
+	}
+
 	&__heading {
 		font-family: "just another hand";
 		font-weight: 400;
@@ -20,6 +24,128 @@
 		width: 100%;
 		height: 25rem;
 		background: url("/images/psei.webp") center / contain no-repeat;
+	}
+
+	&__steps {
+		margin-top: 2rem;
+	}
+	&__step {
+		&--1,
+		&--2 {
+			font-weight: 700;
+		}
+		text-align: center;
+		text-indent: 2rem;
+		margin: 3rem;
+
+		&--expand {
+			.chart {
+				margin: 2rem auto 1rem auto;
+				width: 15rem;
+				height: 15rem;
+
+				&--pie {
+					@extend .chart;
+					background: url("/icons/pie.svg") center / cover no-repeat;
+				}
+
+				&--line {
+					@extend .chart;
+					background: url("/icons/line.svg") center / cover no-repeat;
+				}
+			}
+
+			.heading {
+				font-weight: 700;
+			}
+
+			.list-heading {
+				margin: 2rem auto;
+			}
+
+			.categories {
+				@extend .flex-center;
+				flex-wrap: wrap;
+				flex-shrink: 0;
+			}
+
+			.category {
+				position: relative;
+				@extend .flex-center;
+				margin: 2rem;
+				font-size: 1.4rem;
+				width: 7rem;
+				height: 7rem;
+
+				span {
+					position: absolute;
+					top: -2rem;
+					left: -2rem;
+				}
+
+				&--car {
+					@extend .category;
+					background: url("/icons/car.svg") center/contain no-repeat;
+				}
+				&--family {
+					@extend .category;
+					background: url("/icons/family.svg") center/contain no-repeat;
+				}
+				&--leisure {
+					@extend .category;
+					background: url("/icons/leisure.svg") center/contain no-repeat;
+				}
+				&--education {
+					@extend .category;
+					background: url("/icons/education.svg") center/contain no-repeat;
+				}
+				&--food {
+					@extend .category;
+					background: url("/icons/food.svg") center/contain no-repeat;
+				}
+			}
+		}
+		.apps {
+			@extend .flex-center;
+			flex-wrap: wrap;
+			flex-shrink: 0;
+		}
+		.app {
+			position: relative;
+			margin: 2rem;
+			width: 12rem;
+			height: 12rem;
+			font-weight: bold;
+			box-shadow: 0.4rem 0.4rem 0.8rem $shadow-inactive;
+			border-radius: 4rem;
+			transition: transform 0.1s ease-in;
+			a {
+				position: absolute;
+				top: 2rem;
+				left: -4rem;
+			}
+
+			&:hover {
+				transform: scale(1.03);
+				box-shadow: 0.4rem 0.4rem 1.2rem $shadow-inactive;
+			}
+
+			&--one {
+				@extend .app;
+				background: linear-gradient(rgba(white, 0.9), rgba(white, 0.6)),
+					url("/images/onemoney.png") center/contain no-repeat;
+			}
+			&--manager {
+				@extend .app;
+				background: linear-gradient(rgba(white, 0.9), rgba(white, 0.6)),
+					url("/images/moneymanager.png") center/contain no-repeat;
+			}
+			&--lover {
+				@extend .app;
+				background: linear-gradient(rgba(white, 0.9), rgba(white, 0.6)),
+					url("/images/moneylover.png") center/contain no-repeat;
+			}
+		}
 	}
 
 	&__body {
@@ -89,9 +215,6 @@
 			li {
 				margin: 0.5rem;
 			}
-			.icon {
-				vertical-align: middle;
-			}
 
 			text-indent: 0;
 			padding: 2rem 2rem 10rem 2rem;
@@ -114,9 +237,6 @@
 			margin: 2rem auto;
 			li {
 				margin: 0.5rem;
-			}
-			.icon {
-				vertical-align: middle;
 			}
 
 			.fundamental {

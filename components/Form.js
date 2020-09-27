@@ -25,7 +25,7 @@ export default function Form({ showForm, saveEmail, state, dispatch }) {
 	const methods = useForm({
 		mode: "all",
 		defaultValues: {
-			date: new Date().toISOString()
+			date: new Date().toISOString().substr(0, 16)
 		},
 		resolver: yupResolver(schema)
 	})
@@ -60,7 +60,18 @@ export default function Form({ showForm, saveEmail, state, dispatch }) {
 					<FormInput type="text" id="mobileNumber">
 						Mobile #
 					</FormInput>
-					<input type="datetime-local" ref={register} name="date" />
+					<div className="date">
+						<label htmlFor="date" className="date__label">
+							Preferred Date
+						</label>
+						<input
+							className="date__input"
+							type="datetime-local"
+							ref={register}
+							name="date"
+							id="date"
+						/>
+					</div>
 
 					<div className="form__actions">
 						<button
