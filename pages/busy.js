@@ -1,12 +1,12 @@
 import Navigation from "../components/Navigation"
 import Link from "next/link"
-import Home from "./index"
 import { FaRegCalendarCheck } from "react-icons/fa"
+import WithForm from "../components/withForm"
 
 export default function Busy() {
 	return (
-		<Home
-			otherContent={showForm => {
+		<WithForm
+			content={showForm => {
 				return (
 					<>
 						<Navigation />

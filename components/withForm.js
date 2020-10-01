@@ -3,7 +3,7 @@ import Form from "../components/Form"
 import { useState } from "react"
 import useStoreProspect from "../hooks/useStoreProspect"
 
-export default function Home({ content }) {
+export default function WithForm({ content }) {
 	const [formShown, showForm] = useState(false)
 
 	const [state, dispatch, storeProspect] = useStoreProspect()
