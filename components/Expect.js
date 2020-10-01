@@ -3,12 +3,22 @@ import { MdFace } from "react-icons/md"
 import { GrDiamond } from "react-icons/gr"
 import { RiDirectionFill } from "react-icons/ri"
 import { FaRegHandshake } from "react-icons/fa"
+import { CgTimelapse } from "react-icons/cg"
 
 export default function Expect() {
 	return (
 		<section className="expect main__expect">
 			<h2 className="expect__heading">What to expect in a consultation</h2>
 			<ul className="expect__list">
+				<li className="expect__item">
+					<h3>
+						<CgTimelapse className="icon" /> Just a couple of minutes
+					</h3>
+					<p>
+						We know that your time is valuable so we always try to make every
+						session brief and on point.
+					</p>
+				</li>
 				<li className="expect__item">
 					<h3>
 						<MdLockOutline className="icon" /> Private and confidential

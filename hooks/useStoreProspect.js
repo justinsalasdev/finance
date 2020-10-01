@@ -38,10 +38,10 @@ function reducer(state, action) {
 export default function useSaveEmail() {
 	const [state, dispatch] = useReducer(reducer, initialState)
 
-	async function saveEmail(formData) {
+	async function storeProspect(formData) {
 		dispatch({ type: "start" })
 		try {
-			const response = await fetch(`/api/storeEmail`, {
+			const response = await fetch(`/api/storeProspect`, {
 				method: "post",
 				headers: {
 					"Content-Type": "application/json",
@@ -70,5 +70,5 @@ export default function useSaveEmail() {
 			dispatch({ type: "alert" })
 		}
 	}
-	return [state, dispatch, saveEmail]
+	return [state, dispatch, storeProspect]
 }

@@ -1,10 +1,7 @@
 import * as Yup from "yup"
+import { shape } from "../constants/shape"
 
 async function validator(req, res, next) {
-	const shape = {
-		email: Yup.string().email()
-	}
-
 	try {
 		if (!req.body) {
 			res.status(400).json({

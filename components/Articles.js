@@ -1,7 +1,3 @@
-import { MdEventBusy } from "react-icons/md"
-import { GiBookshelf } from "react-icons/gi"
-import { FaBlackTie } from "react-icons/fa"
-import { FaSearchDollar } from "react-icons/fa"
 import Link from "next/link"
 export default function Articles() {
 	return (
@@ -9,10 +5,9 @@ export default function Articles() {
 			<h2 className="articles__heading">Articles</h2>
 			<ul className="articles__list">
 				<li className="articles__item">
-					<h3>
-						<FaSearchDollar /> I wonder where my money went
-					</h3>
-					<p>
+					<div className="banner banner--empty"></div>
+					<h3 className="heading">I wonder where my money went</h3>
+					<p className="teaser">
 						You're quite sure you didn't over spent but still, at the end of
 						each month, your money magically disappears. Oh why?
 					</p>
@@ -21,10 +16,9 @@ export default function Articles() {
 					</Link>
 				</li>
 				<li className="articles__item">
-					<h3>
-						<MdEventBusy className="icon" /> Investing - for the busy people
-					</h3>
-					<p>
+					<div className="banner banner--busy"></div>
+					<h3 className="heading">Investing - for the busy people</h3>
+					<p className="teaser">
 						You know investing is important but you just don't have time other
 						than for the things you love doing. Here's how you can still do it.
 					</p>
@@ -33,10 +27,9 @@ export default function Articles() {
 					</Link>
 				</li>
 				<li className="articles__item">
-					<h3>
-						<GiBookshelf className="icon" /> Investing - from scratch
-					</h3>
-					<p>
+					<div className="banner banner--scratch"></div>
+					<h3 className="heading">Investing - from scratch</h3>
+					<p className="teaser">
 						You want to learn investing but not sure where to start? Here's how
 						I learned it - on my own
 					</p>
@@ -46,10 +39,9 @@ export default function Articles() {
 				</li>
 
 				<li className="articles__item">
-					<h3>
-						<FaBlackTie className="icon" /> How to be a Financial Consultant
-					</h3>
-					<p>
+					<div className="banner banner--consultant"></div>
+					<h3 className="heading">How to be a Financial Consultant</h3>
+					<p className="teaser">
 						Be prepared to know how to launch yourself to what may be one of the
 						best careers you might not have imagined.
 					</p>

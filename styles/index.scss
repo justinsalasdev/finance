@@ -44,7 +44,8 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@import "./components/date";
+@import "./components/zoom";
+// @import "./components/date";
 @import "./components/link";
 @import "./components/articles";
 @import "./components/rule";

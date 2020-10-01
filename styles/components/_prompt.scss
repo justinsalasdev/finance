@@ -30,15 +30,7 @@
 
 	&__bar {
 		height: 4rem;
-		&--pending {
-			background-color: $danger-light-10;
-		}
-		&--success {
-			background-color: $primary;
-		}
-		&--undefined {
-			background-color: $danger;
-		}
+		background-color: $primary;
 	}
 
 	&__actions {
@@ -64,13 +56,13 @@
 	&__message {
 		text-align: center;
 		font-size: 1.6rem;
-		color: $primary-dark-30;
+		color: $black-light-10;
 
 		&2 {
 			@extend .prompt__message;
 			padding-bottom: 1rem;
 			font-weight: 700;
-			color: $primary;
+			color: $black-light-10;
 		}
 	}
 }

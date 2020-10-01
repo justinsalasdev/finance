@@ -2,6 +2,7 @@
 @import "../common/variables.scss";
 
 .navigation {
+	z-index: $navigation-index;
 	position: fixed;
 	&__home {
 		position: fixed;

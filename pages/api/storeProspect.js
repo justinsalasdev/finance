@@ -2,17 +2,23 @@ import nextConnect from "next-connect"
 import initDatabase from "../../middlewares/initDatabase"
 import validator from "../../middlewares/validator"
 import mailer from "../../helpers/mailer"
+import nodemailer from "nodemailer"
+import createIndex from "../../middlewares/createIndex"
+
+const collectionName = process.env.MONGO_CNAME
 
 const handler = nextConnect()
 handler.use(initDatabase)
+handler.use(createIndex)
 handler.use(validator)
 
 handler.post(async (req, res) => {
-	console.log(req.validBody)
 	try {
-		const emails = req.db.collection("emails")
-		await emails.insertOne(req.body)
-		mailer(req.body.email)
+		const emails = req.db.collection(collectionName)
+		await emails.insertOne(req.validBody)
+		const info = await mailer(req.validBody)
+		console.log("Message sent: %s", info.messageId)
+		console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info))
 		res.json({
 			info: {
 				message: "Email saved successfully",

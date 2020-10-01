@@ -10,6 +10,17 @@
 		vertical-align: middle;
 	}
 
+	&__link {
+		color: lighten(blue, 30%);
+		padding: 1rem;
+		// margin: 1rem;
+
+		&:active,
+		&:focus {
+			font-weight: bold;
+		}
+	}
+
 	&__heading {
 		margin-left: 1rem;
 		font-size: 5rem;
@@ -29,7 +40,8 @@
 		}
 	}
 	&__item {
-		margin: 1rem;
+		margin: 1.3rem;
+		padding-bottom: 1rem;
 		box-shadow: 0.2rem 0.2rem 1.2rem $shadow-inactive;
 		background-color: rgba(white, 0.8);
 		transition: transform 0.1s ease-in;
@@ -38,29 +50,39 @@
 			box-shadow: 0.4rem 0.4rem 1.8rem $shadow-inactive;
 		}
 
-		h3 {
-			font-size: 1.7rem;
-			// font-family: "just another hand";
-			font-weight: 400;
-			padding: 1rem;
-			color: $white;
-			background-color: rgba($black-light-10, 0.6);
-		}
+		.banner {
+			width: 100%;
+			height: 20rem;
 
-		p {
-			color: $black-light-20;
-			text-indent: 2rem;
-			padding: 1rem;
-		}
-
-		a {
-			color: lighten(blue, 30%);
-			padding: 0.5rem;
-
-			&:active,
-			&:focus {
-				font-weight: bold;
+			&--scratch {
+				background: url("/images/invest.jpg") center / cover no-repeat;
 			}
+			&--consultant {
+				background: url("/images/consultant.jpg") center / cover no-repeat;
+			}
+
+			&--busy {
+				background: url("/images/busy.jpg") center / cover no-repeat;
+			}
+
+			&--empty {
+				background: url("/images/empty.jpg") center / cover no-repeat;
+			}
+		}
+
+		.heading {
+			font-size: 1.7rem;
+			font-weight: 400;
+			padding: 0.5rem;
+			color: $white;
+			background: linear-gradient(to right, black 1%, transparent);
+			// border-bottom: 0.1rem dashed rgba($black-light-10, 0.2);
+		}
+
+		.teaser {
+			color: $black-light-20;
+			// text-indent: 2rem;
+			padding: 1rem;
 		}
 	}
 }

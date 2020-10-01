@@ -34,6 +34,12 @@
 		color: $white;
 	}
 
+	&--action {
+		@extend .button;
+		background-color: $black-light-10;
+		color: $white;
+	}
+
 	&--danger {
 		@extend .button;
 		background-color: $white;

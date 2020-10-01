@@ -3,43 +3,30 @@ import { yupResolver } from "@hookform/resolvers"
 import * as Yup from "yup"
 import FormInput from "./FormInput"
 import Spinner from "./Spinner"
+import { shape } from "../constants/shape"
 
-const nameRegex = /^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/g
-const mobileNumberRegex = /^(09|\+639)\d{9}$/
-const schema = Yup.object({
-	firstName: Yup.string()
-		.required("is required")
-		.matches(nameRegex, "is not valid"),
-	lastName: Yup.string()
-		.required("is required")
-		.matches(nameRegex, "is not valid"),
-	mobileNumber: Yup.string()
-		.required("is required")
-		.matches(mobileNumberRegex, "is not valid"),
+const schema = Yup.object().shape(shape)
 
-	email: Yup.string().email("is invalid").required("is required")
-})
-
-export default function Form({ showForm, saveEmail, state, dispatch }) {
+export default function Form({ showForm, storeProspect, state, dispatch }) {
 	const { error, saving } = state
 	const methods = useForm({
 		mode: "all",
-		defaultValues: {
-			date: new Date().toISOString().substr(0, 16)
-		},
+		// defaultValues: {
+		// 	date: new Date().toISOString().substr(0, 16)
+		// },
 		resolver: yupResolver(schema)
 	})
 
-	const { watch, register, handleSubmit, errors: formErrors } = methods
+	const { handleSubmit, errors: formErrors } = methods
 
 	function handleCancel() {
 		dispatch({ type: "acknowledge" })
 		showForm(false)
 	}
 
-	console.log(watch("date"))
+	// console.log(watch("date"))
 
-	//saveEmail automatically receives form data as argument
+	//storeProspect automatically receives form data as argument
 	return (
 		<div className="form__container prompt__component">
 			{error && error.type === "client" ? (
@@ -47,7 +34,7 @@ export default function Form({ showForm, saveEmail, state, dispatch }) {
 			) : null}
 
 			<FormProvider {...methods}>
-				<form onSubmit={handleSubmit(saveEmail)} className={`form`}>
+				<form onSubmit={handleSubmit(storeProspect)} className={`form`}>
 					<FormInput type="text" id="firstName">
 						First Name
 					</FormInput>
@@ -60,7 +47,7 @@ export default function Form({ showForm, saveEmail, state, dispatch }) {
 					<FormInput type="text" id="mobileNumber">
 						Mobile #
 					</FormInput>
-					<div className="date">
+					{/* <div className="date">
 						<label htmlFor="date" className="date__label">
 							Preferred Date
 						</label>
@@ -71,7 +58,7 @@ export default function Form({ showForm, saveEmail, state, dispatch }) {
 							name="date"
 							id="date"
 						/>
-					</div>
+					</div> */}
 
 					<div className="form__actions">
 						<button

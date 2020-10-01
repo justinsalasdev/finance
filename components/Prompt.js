@@ -10,8 +10,7 @@ export default function Prompt(props) {
 		cancel,
 		proceedName,
 		cancelName,
-		children,
-		barModifier
+		children
 	} = props
 
 	const renderAction = type => {
@@ -53,7 +52,7 @@ export default function Prompt(props) {
 		<>
 			<div className="prompt__backdrop"></div>
 			<div className="prompt__window">
-				<div className={`prompt__bar prompt__bar--${barModifier}`}></div>
+				<div className={`prompt__bar`}></div>
 				{message1 && <p className="prompt__message">{message1}</p>}
 				{message2 && <p className="prompt__message2">{message2}</p>}
 				{type === "single" ? null : children}
