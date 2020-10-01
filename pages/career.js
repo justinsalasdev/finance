@@ -9,20 +9,20 @@ export default function Career() {
 				<hr className="blog" />
 				<div className="blog__body">
 					<ul className="blog__steps">
-						<li className="blog__step blog__step--outlook">
+						<li className="step step--outlook">
 							<span className="heading">Attend a Career Outlook</span> - See for
 							yourself what being a consultant is all about; the reasons why you
 							might want to trek the journey; and an overview of what the
 							journey looks like.
 						</li>
-						<li className="blog__step blog__step--schedule">
-							<h4 className="heading">CAREER PREVIEW SCHEDULE</h4>
+						<li className="step step--schedule">
+							<h4 className="heading">Career Preview Schedule</h4>
 							<hr className="career" />
 							<div className="zoom">
 								<div className="zoom__banner"></div>
 								<div className="zoom__content">
 									<p className="zoom__id">Meeting ID: 99999</p>
-									<button className="button button--action">
+									<button className="button button--action zoom__action">
 										Get meeting passcode
 									</button>
 								</div>
@@ -31,14 +31,14 @@ export default function Career() {
 							<span className="date">September 30, 2020</span>
 							<span className="time">7PM - 9PM</span>
 						</li>
-						<li className="blog__step blog__step--celebrate">
+						<li className="step step--celebrate">
 							<span className="heading">Congratulate yourself already</span> -
 							Some people would let opportunities pass without even trying -- so
 							after taking a peek and even decided it's not for you, you're
 							still a winner. Keep looking for the path you'll fall in love
 							going.
 						</li>
-						<li className="blog__step blog__step--prepare">
+						<li className="step step--prepare">
 							<span className="heading">
 								Prepare yourself for the great journey
 							</span>{" "}
