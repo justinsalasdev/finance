@@ -7,9 +7,15 @@ import Expect from "../components/Expect"
 import Articles from "../components/Articles"
 import WithForm from "../components/withForm"
 
+const formOptions = {
+	info: "Hi! I'll reach you thru your contact details",
+	success: "Thank you! Expect to hear from me soon!"
+}
+
 export default function Home() {
 	return (
 		<WithForm
+			formOptions={formOptions}
 			content={showForm => {
 				return (
 					<>

@@ -35,7 +35,7 @@ function reducer(state, action) {
 	}
 }
 
-export default function useSaveEmail() {
+export default function useStoreProspect() {
 	const [state, dispatch] = useReducer(reducer, initialState)
 
 	async function storeProspect(formData) {

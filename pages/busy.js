@@ -3,9 +3,14 @@ import Link from "next/link"
 import { FaRegCalendarCheck } from "react-icons/fa"
 import WithForm from "../components/withForm"
 
+const formOptions = {
+	info: "Hi! I'll reach you thru your contact details",
+	success: "Thank you! Expect to hear from me soon!"
+}
 export default function Busy() {
 	return (
 		<WithForm
+			formOptions={formOptions}
 			content={showForm => {
 				return (
 					<>

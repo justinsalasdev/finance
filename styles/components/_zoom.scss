@@ -1,9 +1,11 @@
+@import "../common/variables.scss";
+
 .zoom {
 	margin: 2rem auto;
 	height: 10rem;
 	width: 70%;
 	display: flex;
-	border: 0.1rem solid rgba($black-light-10, 0.2);
+	border: 0.1rem solid rgba($black-light-10, 0.1);
 
 	&__banner {
 		width: 20rem;
@@ -18,7 +20,7 @@
 	}
 
 	&__id {
-		text-transform: uppercase;
+		// text-transform: uppercase;
 		font-weight: 700;
 		margin-bottom: 1rem;
 	}

@@ -1,8 +1,6 @@
-const collectionName = process.env.MONGO_CNAME
-
 async function createIndex(req, res, next) {
 	try {
-		const prospects = req.db.collection(collectionName)
+		const prospects = req.db.collection("prospects")
 		if (await prospects.indexExists("email")) {
 			next()
 		} else {

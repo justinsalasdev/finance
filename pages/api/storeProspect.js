@@ -5,8 +5,6 @@ import mailer from "../../helpers/mailer"
 import nodemailer from "nodemailer"
 import createIndex from "../../middlewares/createIndex"
 
-const collectionName = process.env.MONGO_CNAME
-
 const handler = nextConnect()
 handler.use(initDatabase)
 handler.use(createIndex)
@@ -14,7 +12,7 @@ handler.use(validator)
 
 handler.post(async (req, res) => {
 	try {
-		const emails = req.db.collection(collectionName)
+		const emails = req.db.collection("prospects")
 		await emails.insertOne(req.validBody)
 		const info = await mailer(req.validBody)
 		console.log("Message sent: %s", info.messageId)

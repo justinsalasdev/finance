@@ -3,7 +3,9 @@ import Form from "../components/Form"
 import { useState } from "react"
 import useStoreProspect from "../hooks/useStoreProspect"
 
-export default function WithForm({ content }) {
+export default function WithForm({ content, formOptions }) {
+	const { info, success } = formOptions
+
 	const [formShown, showForm] = useState(false)
 
 	const [state, dispatch, storeProspect] = useStoreProspect()
@@ -37,11 +39,7 @@ export default function WithForm({ content }) {
 				<Prompt
 					acknowledge={acknowledgeSuccess}
 					type={saved ? "single" : ""}
-					message1={
-						saved
-							? "Thank you! Expect to hear from me soon!"
-							: "Hi! I'll reach you thru your contact details"
-					}
+					message1={saved ? success : info}
 				>
 					<Form {...formProps} />
 				</Prompt>

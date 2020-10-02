@@ -1,6 +1,14 @@
 import Navigation from "../components/Navigation"
 
-export default function Career() {
+const formOptions = {
+	url: "storeRecruit",
+	info:
+		"To keep things organized, I need to personally send meeting instructions to each participant.",
+	success: "Thank you! I'll send you the information you need right away"
+}
+
+export default function Career({ schedule }) {
+	const { date, time, day, meetingId } = schedule
 	return (
 		<>
 			<Navigation />
@@ -10,26 +18,38 @@ export default function Career() {
 				<div className="blog__body">
 					<ul className="blog__steps">
 						<li className="step step--outlook">
-							<span className="heading">Attend a Career Outlook</span> - See for
-							yourself what being a consultant is all about; the reasons why you
-							might want to trek the journey; and an overview of what the
+							<span className="heading">Attend the Career Preview</span> - See
+							for yourself what being a consultant is all about; the reasons why
+							you might want to trek the journey; and an overview of what the
 							journey looks like.
 						</li>
 						<li className="step step--schedule">
 							<h4 className="heading">Career Preview Schedule</h4>
 							<hr className="career" />
+
+							<span className="day">{day}</span>
+							<span className="date">{date}</span>
+							<span className="time">{time}</span>
 							<div className="zoom">
 								<div className="zoom__banner"></div>
 								<div className="zoom__content">
-									<p className="zoom__id">Meeting ID: 99999</p>
+									<p className="zoom__id">Meeting ID: {meetingId}</p>
 									<button className="button button--action zoom__action">
 										Get meeting passcode
 									</button>
 								</div>
 							</div>
-							<span className="day">WEDNESDAY</span>
-							<span className="date">September 30, 2020</span>
-							<span className="time">7PM - 9PM</span>
+							<span className="subscription">
+								Can't make it?{" "}
+								<a
+									onClick={e => {
+										e.preventDefault()
+										console.log("hahaha")
+									}}
+								>
+									join the next preview
+								</a>
+							</span>
 						</li>
 						<li className="step step--celebrate">
 							<span className="heading">Congratulate yourself already</span> -
@@ -55,7 +75,7 @@ export default function Career() {
 }
 
 export async function getStaticProps() {
-	const res = await fetch("http://localhost:3000/api/getSchedule")
+	const res = await fetch(`${process.env.NEXT_PUBLIC_API}/getSchedule`)
 	const schedule = await res.json()
 	console.log(schedule)
 
