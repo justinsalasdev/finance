@@ -16,7 +16,7 @@ export default function Home() {
 	return (
 		<WithForm
 			formOptions={formOptions}
-			content={showForm => {
+			content={(showForm, setURL) => {
 				return (
 					<>
 						<Head>
@@ -65,7 +65,10 @@ export default function Home() {
 							<button
 								className="main__action button--success"
 								type="button"
-								onClick={() => showForm(true)}
+								onClick={() => {
+									setURL("storeProspect")
+									showForm(true)
+								}}
 							>
 								<FaRegCalendarCheck className="main__action-icon" /> Set an
 								appointment

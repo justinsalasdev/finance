@@ -14,11 +14,11 @@ export default function Track() {
 				<hr className="blog" />
 				<div className="blog__body">
 					<ul className="blog__steps">
-						<li className="blog__step blog__step--1">
+						<li className="step step--1">
 							<AiOutlineLike className="icon" /> You don't have to be a
 							financial expert to do this
 						</li>
-						<li className="blog__step blog__step--2">
+						<li className="step step--2">
 							<FcPhoneAndroid className="icon" />
 							Download some good expense tracker apps
 							<ul className="apps">
@@ -51,7 +51,7 @@ export default function Track() {
 								</li>
 							</ul>
 						</li>
-						<li className="blog__step blog__step--expand">
+						<li className="step step--expand">
 							<AiOutlinePieChart className="icon" />{" "}
 							<span className="heading">Create spending categories</span> -
 							Tracker apps have common built in categories but you can delete
@@ -78,7 +78,7 @@ export default function Track() {
 								</li>
 							</ul>
 						</li>
-						<li className="blog__step blog__step--expand">
+						<li className="step step--expand">
 							<AiOutlineAppstoreAdd className="icon" />{" "}
 							<span className="heading">
 								Strictly add records of every spending
@@ -87,7 +87,7 @@ export default function Track() {
 							one month of tracking
 							<div className="chart--pie"></div>
 						</li>
-						<li className="blog__step blog__step--expand">
+						<li className="step step--expand">
 							<RiRefund2Fill className="icon" />{" "}
 							<span className="heading">Add starting budget</span> - Seeing how
 							your initial budget gets depleted with every purchase will somehow

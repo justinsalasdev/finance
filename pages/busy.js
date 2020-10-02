@@ -4,6 +4,7 @@ import { FaRegCalendarCheck } from "react-icons/fa"
 import WithForm from "../components/withForm"
 
 const formOptions = {
+	url: "storeProspect",
 	info: "Hi! I'll reach you thru your contact details",
 	success: "Thank you! Expect to hear from me soon!"
 }
@@ -11,7 +12,7 @@ export default function Busy() {
 	return (
 		<WithForm
 			formOptions={formOptions}
-			content={showForm => {
+			content={(showForm, setURL) => {
 				return (
 					<>
 						<Navigation />
@@ -159,7 +160,10 @@ export default function Busy() {
 									<button
 										className="main__action button--success"
 										type="button"
-										onClick={() => showForm(true)}
+										onClick={() => {
+											setURL("storeProspect")
+											showForm(true)
+										}}
 									>
 										<FaRegCalendarCheck className="main__action-icon" /> Set an
 										appointment

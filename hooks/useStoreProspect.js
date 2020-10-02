@@ -35,13 +35,13 @@ function reducer(state, action) {
 	}
 }
 
-export default function useStoreProspect() {
+export default function useStoreProspect(url) {
 	const [state, dispatch] = useReducer(reducer, initialState)
 
 	async function storeProspect(formData) {
 		dispatch({ type: "start" })
 		try {
-			const response = await fetch(`/api/storeProspect`, {
+			const response = await fetch(`/api/${url}`, {
 				method: "post",
 				headers: {
 					"Content-Type": "application/json",

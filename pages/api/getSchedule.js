@@ -8,7 +8,6 @@ handler.get(async (req, res) => {
 	try {
 		const schedules = req.db.collection("schedules")
 		const result = await schedules.findOne({ name: "BYB" })
-		console.log(result)
 		res.json(result)
 	} catch (error) {
 		console.log(error)

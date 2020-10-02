@@ -6,9 +6,10 @@ import useStoreProspect from "../hooks/useStoreProspect"
 export default function WithForm({ content, formOptions }) {
 	const { info, success } = formOptions
 
+	const [url, setURL] = useState("storeProspect")
 	const [formShown, showForm] = useState(false)
 
-	const [state, dispatch, storeProspect] = useStoreProspect()
+	const [state, dispatch, storeProspect] = useStoreProspect(url)
 	const { alertShown, error, saved } = state
 
 	const errorProps = {
@@ -45,7 +46,7 @@ export default function WithForm({ content, formOptions }) {
 				</Prompt>
 			) : null}
 
-			{content(showForm)}
+			{content(showForm, setURL)}
 		</>
 	)
 }
