@@ -15,7 +15,7 @@
 
 	&__list {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
 		@media screen and (max-width: 24em) {
 			display: flex;
@@ -38,11 +38,12 @@
 
 		h3 {
 			// display: inline-block;
-			border-bottom: 1px solid rgba(black, 0.2);
+			border-bottom: 1px solid transparent;
 			margin-bottom: 0.5rem;
 		}
 
 		p {
+			text-align: justify;
 			text-indent: 5%;
 		}
 	}

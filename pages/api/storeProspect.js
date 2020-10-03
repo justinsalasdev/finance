@@ -1,7 +1,7 @@
 import nextConnect from "next-connect"
 import initDatabase from "../../middlewares/initDatabase"
 import validator from "../../middlewares/validator"
-import mailer from "../../helpers/mailer"
+import prospectMailer from "../../helpers/prospectMailer"
 import nodemailer from "nodemailer"
 import createIndex from "../../middlewares/createIndex"
 
@@ -15,7 +15,7 @@ handler.post(async (req, res) => {
 	try {
 		const emails = req.db.collection(collectionName)
 		await emails.insertOne(req.validBody)
-		const info = await mailer(req.validBody)
+		const info = await prospectMailer(req.validBody)
 		console.log("Message sent: %s", info.messageId)
 		console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info))
 		res.json({

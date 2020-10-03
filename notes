@@ -1,6 +1,10 @@
 create email zoom meeting instruction template
 create notif email for next zoom schedule
-create storeRecruit endpoint
+create storeRecruit endpoints
+add point 
+the purpose of meeting is to know if we can work together
+
+
 //done
 create initDB route
 create server side validation

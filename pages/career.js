@@ -3,7 +3,7 @@ import WithForm from "../components/withForm"
 
 const formOptions = {
 	info: "Please provide registration details",
-	success: "Thank you! Meeting details have been sent to your mail"
+	success: "Thank you! Please check your mail for more info"
 }
 // const schedule = {
 // 	date: "September 30, 2020",

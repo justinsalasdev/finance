@@ -12,6 +12,15 @@ export default function Expect() {
 			<ul className="expect__list">
 				<li className="expect__item">
 					<h3>
+						<FaRegHandshake /> It's free
+					</h3>
+					<p>
+						Sharing financial literacy is our main goal. The feeling of having
+						impact to the lives of other people is priceless
+					</p>
+				</li>
+				<li className="expect__item">
+					<h3>
 						<CgTimelapse className="icon" /> Just a couple of minutes
 					</h3>
 					<p>
@@ -56,15 +65,6 @@ export default function Expect() {
 					<p>
 						We'll give you valuable recommendations and you always have the
 						freedom to decide for yourself.
-					</p>
-				</li>
-				<li className="expect__item">
-					<h3>
-						<FaRegHandshake /> It's free
-					</h3>
-					<p>
-						Sharing financial literacy is our main goal. The feeling of having
-						impact to the lives of other people is priceless
 					</p>
 				</li>
 			</ul>

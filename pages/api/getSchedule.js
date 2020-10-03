@@ -1,20 +1,13 @@
 import nextConnect from "next-connect"
+import getSchedule from "../../middlewares/getSchedule"
 import initDatabase from "../../middlewares/initDatabase"
 
 const handler = nextConnect()
 handler.use(initDatabase)
+handler.use(getSchedule)
 
 handler.get(async (req, res) => {
-	try {
-		const schedules = req.db.collection("schedules")
-		const result = await schedules.findOne({ name: "BYB" })
-		res.json(result)
-	} catch (error) {
-		console.log(error)
-		res.status(400).json({
-			error: "hahaha"
-		})
-	}
+	res.json(req.schedule)
 })
 
 export default handler

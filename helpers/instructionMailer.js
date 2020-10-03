@@ -1,8 +1,8 @@
 import nodemailer from "nodemailer"
-import templateGenerator from "./templateGenerator"
+import instructionGenerator from "./instructionGenerator"
 
-export default async function mailer(emailData) {
-	const emailTemplate = templateGenerator(emailData)
+export default async function instructionMailer(emailData, schedule) {
+	const emailTemplate = instructionGenerator(emailData, schedule)
 	const { email } = emailData
 	let transporter = nodemailer.createTransport({
 		host: "webhost.dynadot.com",
@@ -18,7 +18,7 @@ export default async function mailer(emailData) {
 		from: `"Justin Salas" save@justinsalas.cc`,
 		to: `${email}`, // list of receivers
 		cc: `save@justinsalas.cc`,
-		subject: "A warm welcome from your financial advisor", // Subject line
+		subject: "PRU Life UK : Career Preview Instructions", // Subject line
 		html: emailTemplate
 	})
 
