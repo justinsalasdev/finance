@@ -2,6 +2,7 @@ import Navigation from "../components/Navigation"
 import Link from "next/link"
 import { FaRegCalendarCheck } from "react-icons/fa"
 import WithForm from "../components/withForm"
+import Head from "next/head"
 
 const formOptions = {
 	url: "storeProspect",
