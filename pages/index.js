@@ -24,7 +24,7 @@ export default function Home() {
 							<title>justinsalas | Home</title>
 							<link
 								rel="shortcut icon"
-								href="/icons/favicon.ico"
+								href="/favicon.ico"
 								type="image/x-icon"
 							/>
 							<meta name="author" content="Justin Salas" />
