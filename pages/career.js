@@ -5,14 +5,14 @@ const formOptions = {
 	info: "Please provide registration details",
 	success: "Thank you! Meeting details have been sent to your mail"
 }
-const schedule = {
-	date: "September 30, 2020",
-	time: "7PM-9PM",
-	day: "Wednesday",
-	meetingId: "98989898"
-}
+// const schedule = {
+// 	date: "September 30, 2020",
+// 	time: "7PM-9PM",
+// 	day: "Wednesday",
+// 	meetingId: "98989898"
+// }
 
-export default function Career() {
+export default function Career({ schedule }) {
 	const { date, time, day, meetingId } = schedule
 	return (
 		<WithForm
@@ -98,18 +98,18 @@ export default function Career() {
 	)
 }
 
-// export async function getStaticProps() {
-// 	const res = await fetch(`${process.env.NEXT_PUBLIC_API}/getSchedule`)
-// 	const schedule = await res.json()
-// 	console.log(schedule)
+export async function getStaticProps() {
+	const res = await fetch(`${process.env.NEXT_PUBLIC_API}/getSchedule`)
+	const schedule = await res.json()
+	console.log(schedule)
 
-// 	return {
-// 		props: {
-// 			schedule
-// 		},
-// 		// Next.js will attempt to re-generate the page:
-// 		// - When a request comes in
-// 		// - At most once every second
-// 		revalidate: 3600 // In seconds
-// 	}
-// }
+	return {
+		props: {
+			schedule
+		},
+		// Next.js will attempt to re-generate the page:
+		// - When a request comes in
+		// - At most once every second
+		revalidate: 3600 // In seconds
+	}
+}
