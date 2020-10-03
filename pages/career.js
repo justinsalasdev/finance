@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation"
 import WithForm from "../components/withForm"
 
@@ -5,15 +6,20 @@ const formOptions = {
 	info: "Please provide registration details",
 	success: "Thank you! Please check your mail for more info"
 }
-// const schedule = {
-// 	date: "September 30, 2020",
-// 	time: "7PM-9PM",
-// 	day: "Wednesday",
-// 	meetingId: "98989898"
-// }
 
-export default function Career({ schedule }) {
-	const { date, time, day, meetingId } = schedule
+export default function Career() {
+	const [schedule, setSchedule] = useState({})
+	const { date, time, day } = schedule
+
+	useEffect(() => {
+		async function fetchSchedule() {
+			const res = await fetch(`${process.env.NEXT_PUBLIC_API}/getSchedule`)
+			const schedule = await res.json()
+			setSchedule(schedule)
+		}
+		fetchSchedule()
+	}, [])
+
 	return (
 		<WithForm
 			formOptions={formOptions}
@@ -96,20 +102,4 @@ export default function Career({ schedule }) {
 			}}
 		/>
 	)
-}
-
-export async function getStaticProps() {
-	const res = await fetch(`${process.env.NEXT_PUBLIC_API}/getSchedule`)
-	const schedule = await res.json()
-	console.log(schedule)
-
-	return {
-		props: {
-			schedule
-		},
-		// Next.js will attempt to re-generate the page:
-		// - When a request comes in
-		// - At most once every second
-		revalidate: 3600 // In seconds
-	}
 }

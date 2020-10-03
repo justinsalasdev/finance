@@ -7,7 +7,10 @@ handler.use(initDatabase)
 handler.use(getSchedule)
 
 handler.get(async (req, res) => {
-	res.json(req.schedule)
+	const {
+		schedule: { date, time, day }
+	} = req
+	res.json({ date, time, day })
 })
 
 export default handler
