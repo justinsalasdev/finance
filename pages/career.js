@@ -44,7 +44,7 @@ export default function Career({ schedule }) {
 										<div className="zoom">
 											<div className="zoom__banner"></div>
 											<div className="zoom__content">
-												<p className="zoom__id">Meeting ID: {meetingId}</p>
+												{/* <p className="zoom__id">Meeting ID: {meetingId}</p> */}
 												<button
 													className="button button--action zoom__action"
 													onClick={() => {
