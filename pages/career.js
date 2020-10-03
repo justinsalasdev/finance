@@ -1,24 +1,20 @@
-import { useEffect, useState } from "react"
 import Navigation from "../components/Navigation"
 import WithForm from "../components/withForm"
+import useSWR from "swr"
 
 const formOptions = {
 	info: "Please provide registration details",
 	success: "Thank you! Please check your mail for more info"
 }
 
-export default function Career() {
-	const [schedule, setSchedule] = useState({})
-	const { date, time, day } = schedule
+async function fetchSchedule() {
+	const res = await fetch(`/api/getSchedule`)
+	const schedule = await res.json()
+	return schedule
+}
 
-	useEffect(() => {
-		async function fetchSchedule() {
-			const res = await fetch(`${process.env.NEXT_PUBLIC_API}/getSchedule`)
-			const schedule = await res.json()
-			setSchedule(schedule)
-		}
-		fetchSchedule()
-	}, [])
+export default function Career() {
+	const { data, error } = useSWR("/api/user", fetchSchedule)
 
 	return (
 		<WithForm
@@ -44,9 +40,15 @@ export default function Career() {
 										<h4 className="heading">Career Preview Schedule</h4>
 										<hr className="career" />
 
-										<span className="day">{day}</span>
-										<span className="date">{date}</span>
-										<span className="time">{time}</span>
+										<span className="day">
+											{(data && data.day) || "Loading.."}
+										</span>
+										<span className="date">
+											{(data && data.date) || "Loading.."}
+										</span>
+										<span className="time">
+											{(data && data.time) || "Loading.."}
+										</span>
 										<div className="zoom">
 											<div className="zoom__banner"></div>
 											<div className="zoom__content">
