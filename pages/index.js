@@ -43,9 +43,9 @@ export default function Home() {
 						<main className="main main--home">
 							<h1 className="greet main__greet">
 								Hi
-								<FaRegSmileBeam className="greet__sun" /> I'm Justin, a licensed
-								financial consultant. I can help you make better financial
-								decisions <BsGraphUp className="greet__coin" />
+								<FaRegSmileBeam className="greet__sun" /> I'm Justin, a Licensed
+								Consultant. I can help you be a financial success!{" "}
+								<BsGraphUp className="greet__coin" />
 							</h1>
 							<button
 								className="main__action button--success"
