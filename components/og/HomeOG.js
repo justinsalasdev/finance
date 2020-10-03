@@ -6,7 +6,7 @@ export default function HomeOG() {
 			<meta property="og:url" content="https://justinsalas.cc" />
 			<meta
 				property="og:image"
-				content="https://save.justinsalas.cc/images/prulife.jpg"
+				content="https://save.justinsalas.cc/images/prulifeOG.jpg"
 			/>
 			<meta property="profile:first_name" content="Justin" />
 			<meta property="profile:last_name" content="Salas" />

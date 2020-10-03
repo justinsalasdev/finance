@@ -11,7 +11,7 @@ export default function CareerOG() {
 			<meta property="og:type" content="article" />
 			<meta
 				property="og:image"
-				content="https://save.justinsalas.cc/images/prulife.jpg"
+				content="https://save.justinsalas.cc/images/prulifeOG.jpg"
 			/>
 		</>
 	)
