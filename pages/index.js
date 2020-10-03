@@ -6,6 +6,8 @@ import Navigation from "../components/Navigation"
 import Expect from "../components/Expect"
 import Articles from "../components/Articles"
 import WithForm from "../components/withForm"
+import HomeOG from "../components/og/HomeOG"
+import HomeCard from "../components/cards/HomeCard"
 
 const formOptions = {
 	info: "Hi! I'll reach you thru your contact details",
@@ -34,25 +36,8 @@ export default function Home() {
 							/>
 							<meta name="robots" content="index, nofollow" />
 
-							{/* facebook open graph*/}
-							<meta property="og:type" content="profile" />
-							<meta property="og:title" content="Justin Salas" />
-							<meta property="og:url" content="https://justinsalas.cc" />
-							<meta
-								property="og:image"
-								content="https://save.justinsalas.cc/images/umbrella.jpg"
-							/>
-							<meta property="profile:first_name" content="Justin" />
-							<meta property="profile:last_name" content="Salas" />
-
-							{/* twitter cards*/}
-							<meta name="twitter:card" content="summary" />
-							<meta name="twitter:site" content="justinsalas.cc" />
-							<meta name="twitter:title" content="Justin Salas" />
-							<meta
-								name="twitter:description"
-								content="A licensed financial consultant"
-							/>
+							<HomeOG />
+							<HomeCard />
 						</Head>
 						<Navigation />
 						<main className="main main--home">

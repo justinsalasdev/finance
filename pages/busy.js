@@ -15,6 +15,20 @@ export default function Busy() {
 			content={(showForm, setURL) => {
 				return (
 					<>
+						<Head>
+							<title>justinsalas | Invest</title>
+							<link
+								rel="shortcut icon"
+								href="/favicon.ico"
+								type="image/x-icon"
+							/>
+							<meta name="author" content="Justin Salas" />
+							<meta
+								name="description"
+								content="How to invest even if you're busy"
+							/>
+							<meta name="robots" content="index, nofollow" />
+						</Head>
 						<Navigation />
 						<main className="main main--blog">
 							<h1 className="blog__heading">Investing - for the busy people</h1>

@@ -1,6 +1,8 @@
 import Navigation from "../components/Navigation"
 import WithForm from "../components/withForm"
 import useSWR from "swr"
+import Head from "next/head"
+import CareerOG from "../components/cards/CareerOG"
 
 const formOptions = {
 	info: "Please provide registration details",
@@ -22,6 +24,22 @@ export default function Career() {
 			content={(showForm, setURL) => {
 				return (
 					<>
+						<Head>
+							{/* generic meta tag*/}
+							<title>justinsalas | Career</title>
+							<link
+								rel="shortcut icon"
+								href="/favicon.ico"
+								type="image/x-icon"
+							/>
+							<meta name="author" content="Justin Salas" />
+							<meta
+								name="description"
+								content="How to be a financial consultant"
+							/>
+							<meta name="robots" content="index, nofollow" />
+							<CareerOG />
+						</Head>
 						<Navigation />
 						<main className="main main--blog">
 							<h1 className="blog__heading">

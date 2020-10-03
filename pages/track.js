@@ -4,10 +4,18 @@ import { FcPhoneAndroid } from "react-icons/fc"
 import { AiOutlinePieChart } from "react-icons/ai"
 import { AiOutlineAppstoreAdd } from "react-icons/ai"
 import { RiRefund2Fill } from "react-icons/ri"
+import Head from "next/head"
 
 export default function Track() {
 	return (
 		<>
+			<Head>
+				<title>justinsalas | Track</title>
+				<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+				<meta name="author" content="Justin Salas" />
+				<meta name="description" content="Track your spending" />
+				<meta name="robots" content="index, nofollow" />
+			</Head>
 			<Navigation />
 			<main className="main main--blog">
 				<h1 className="blog__heading">Budget Tracking</h1>
