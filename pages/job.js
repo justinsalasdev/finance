@@ -30,8 +30,8 @@ export default function Job() {
 					<p className="blog__content card--blocks">
 						During consultation, clients share relevant information like, but
 						not limited to, their goals, income, expenses, assets and
-						liabilities. Using the these data, the advisor will try to come up
-						with a model that best represents their current financial standing.
+						liabilities. Using these data, the advisor will try to come up with
+						a model that best represents their current financial standing.
 					</p>
 					<p className="blog__content">
 						Every client is unique and each requires a different approach to the
