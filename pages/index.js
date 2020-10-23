@@ -43,7 +43,7 @@ export default function Home() {
 						<Navigation />
 						<main className="main main--home">
 							<h1 className="greet main__greet">
-								Hi! I'm Justin, a licensed consultant. I can help you be a
+								Hi! I'm Justin, a licensed advisor. I can help you be a
 								financial success! <BsGraphUp className="greet__coin" />
 							</h1>
 							<button

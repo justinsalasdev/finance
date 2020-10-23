@@ -1,0 +1,26 @@
+.graphics {
+	margin: 1rem auto;
+	width: 100%;
+	height: 25rem;
+	background: url("/images/psei.webp") center / contain no-repeat;
+
+	&--shapes {
+		background: url("/images/shapes.jpg") center / cover no-repeat;
+		height: 40rem;
+
+		@media screen and (max-width: 39.26rem) {
+			background-size: contain;
+			height: 25rem;
+		}
+	}
+
+	&--conflict {
+		background: url("/images/conflict.gif") center / contain no-repeat;
+		height: 40rem;
+
+		@media screen and (max-width: 39.26rem) {
+			background-size: contain;
+			height: 25rem;
+		}
+	}
+}

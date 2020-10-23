@@ -31,9 +31,9 @@ export default function Starter() {
 						Handling money isn't something schools teach so I decided to take
 						responsibility for my own financial education. Since I don't know
 						where to start learning, I just googled around and stumbled upon a
-						book called <span className="title--dad">Rich Dad Poor Dad.</span>
+						book called <span className="hl--dad">Rich Dad Poor Dad.</span>
 					</p>
-					<p className="blog__content--dad blog__content">
+					<p className="card--dad">
 						The book lays out some career and financial decisions people would
 						have to make at some point of their lives.
 					</p>
@@ -41,18 +41,18 @@ export default function Starter() {
 						As a takeaway, I decided to trek the road to Investing though, as
 						usual, I don't really know where and how to start. Thankfully, If
 						one has a will, Google for sure has a way -- this led me to a book
-						called <span className="title--dummies">Investing for dummies</span>
+						called <span className="hl--dummies">Investing for dummies</span>
 					</p>
-					<div className="blog__content--invest-dummy">
+					<div className="card--invest-dummy">
 						The book introduces some known ways to make one's money grow:
 						<ul className="list">
-							<li>
+							<li className="card__item">
 								<RiStore2Line className="icon" /> starting your own business
 							</li>
-							<li>
+							<li className="card__item">
 								<RiBuilding2Line className="icon" /> owning real estate
 							</li>{" "}
-							<li>
+							<li className="card__item">
 								<AiOutlinePieChart className="icon" /> being part owner of
 								someone else's business
 							</li>
@@ -71,7 +71,7 @@ export default function Starter() {
 						decision.
 					</p>
 					<br />
-					<p className="blog__content blog__content--stocks">
+					<p className="card--stocks">
 						The act of buying <span className="keyword--black">portions</span>{" "}
 						or <span className="keyword--black">shares</span> (commonly known as
 						stocks) of a business is not a mystery. With little googling and a
@@ -82,12 +82,11 @@ export default function Starter() {
 					<p className="blog__content">
 						I realized I'm not yet ready to make my first purchase so I
 						consulted again my best friend Google. He introduced me to a book
-						called{" "}
-						<span className="title--intelligent">The Intelligent Investor</span>{" "}
-						-- written by Benjamin Graham : the greatest investor who ever lived
-						; teacher of the billionaire Warren Buffet
+						called <span className="hl--int">The Intelligent Investor</span> --
+						written by Benjamin Graham : the greatest investor who ever lived ;
+						teacher of the billionaire Warren Buffet
 					</p>
-					<div className="blog__content--intelligent">
+					<div className="card--intelligent">
 						{" "}
 						An intelligent investor should thoroughly evaluate a company before
 						he ever decide to be part of it. How it's done? These books would
@@ -108,7 +107,7 @@ export default function Starter() {
 						<br />
 						Here are the few more good reads I've found :
 					</p>
-					<ul className="blog__content--books">
+					<ul className="card--books">
 						<li className="oneup">
 							<strong>ONE UP O</strong>N WALL STREET
 							<br />

@@ -126,7 +126,7 @@ export default function Busy() {
 									that cost P100 in 2019, you would have lost 20% already as of
 									2020.
 								</p>{" "}
-								<div className="blog__graphics"></div>
+								<div className="graphics"></div>
 								<p className="blog__content">
 									The stock market is crazy. Like a woman, you'll never know
 									what she thinks but understanding why she's like that is more

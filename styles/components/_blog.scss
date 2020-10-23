@@ -35,6 +35,16 @@
 		width: 100%;
 		height: 25rem;
 		background: url("/images/psei.webp") center / contain no-repeat;
+
+		&--shapes {
+			background: url("/images/shapes.jpg") center / cover no-repeat;
+			height: 40rem;
+
+			@media screen and (max-width: 39.26rem) {
+				background-size: contain;
+				height: 25rem;
+			}
+		}
 	}
 
 	&__steps {
@@ -71,19 +81,7 @@
 			font-weight: 700;
 			color: black;
 		}
-		.title--dad {
-			@extend .title;
 
-			text-shadow: 0.1rem 0.1rem 0.2rem purple;
-		}
-		.title--dummies {
-			@extend .title;
-			text-shadow: 0.1rem 0.1rem 0.2rem yellow;
-		}
-		.title--intelligent {
-			@extend .title;
-			text-shadow: 0.1rem 0.1rem 0.2rem $primary;
-		}
 		.keyword--black {
 			font-weight: 700;
 		}
@@ -94,113 +92,6 @@
 
 		&:first-child {
 			margin-top: 3rem;
-		}
-
-		&--dad {
-			margin: 2rem auto;
-			text-indent: 0;
-			padding: 2rem 2rem 15rem 2rem;
-			color: darken(white, 5%);
-			background: linear-gradient(
-					-45deg,
-					rgba(purple, 0.5),
-					darken(purple, 10%)
-				),
-				url("/images/rich.jpg") 50% 50% / cover no-repeat;
-		}
-
-		&--invest-dummy {
-			margin: 2rem auto;
-			li {
-				margin: 0.5rem;
-			}
-
-			text-indent: 0;
-			padding: 2rem 2rem 10rem 2rem;
-			color: black-light-10;
-			background: linear-gradient(
-					-45deg,
-					rgba(lighten(yellow, 10%), 0.6),
-					lighten(yellow, 30%)
-				),
-				url("/images/investdummies.jpg") top center / cover no-repeat;
-		}
-
-		&--stocks {
-			margin-top: 3rem;
-			border-top: 0.1rem solid rgba(black, 0.2);
-			padding-top: 0.5rem;
-		}
-
-		&--intelligent {
-			margin: 2rem auto;
-			li {
-				margin: 0.5rem;
-			}
-
-			.fundamental {
-				margin-top: 1.5rem;
-				color: black;
-				display: inline-block;
-				padding: 0.5rem;
-				background-color: yellow;
-				box-shadow: 0.2rem 0.2rem 0.4rem $shadow-inactive;
-			}
-
-			.security {
-				color: black;
-				display: inline-block;
-				padding: 0.5rem;
-				background-color: goldenrod;
-				box-shadow: 0.2rem 0.2rem 0.4rem $shadow-inactive;
-			}
-
-			text-indent: 0;
-			padding: 2rem 2rem 10rem 2rem;
-			color: white;
-			background: linear-gradient(-45deg, rgba($primary, 0.6), $primary-dark-20),
-				url("/images/intelligent.jpg") center / cover no-repeat;
-		}
-
-		&--books {
-			margin: 2rem auto;
-			gap: 1rem;
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-			height: 40rem;
-			@media screen and (max-width: 42.6em) {
-				display: flex;
-				flex-direction: column;
-				align-items: stretch;
-				height: auto;
-
-				& li {
-					height: auto;
-					min-height: 15rem;
-				}
-			}
-
-			.oneup {
-				color: rgba(white, 0.9);
-
-				padding: 2rem;
-				background: linear-gradient(-45deg, rgba($black, 0.6), $black),
-					url("/images/oneup.jpg") center / cover no-repeat;
-			}
-
-			.naked {
-				color: rgba(white, 0.9);
-				padding: 2rem;
-				background: linear-gradient(-45deg, rgba(green, 0.6), green),
-					url("/images/naked.jpg") center / cover no-repeat;
-			}
-
-			.uncommon {
-				color: rgba(white, 0.9);
-				padding: 2rem;
-				background: linear-gradient(-45deg, rgba($black, 0.6), $black),
-					url("/images/uncommon.jpg") center / cover no-repeat;
-			}
 		}
 
 		&--quotes {

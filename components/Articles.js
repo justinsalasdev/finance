@@ -5,6 +5,17 @@ export default function Articles() {
 			<h2 className="articles__heading">Articles</h2>
 			<ul className="articles__list">
 				<li className="articles__item">
+					<div className="banner banner--advisor"></div>
+					<h3 className="heading">An overview of my profession</h3>
+					<p className="teaser">
+						You might be curious what financial advisors do for their clients
+						and how they earn. Let me give you some insight.
+					</p>
+					<Link href="/job">
+						<a className="articles__link">read more</a>
+					</Link>
+				</li>
+				<li className="articles__item">
 					<div className="banner banner--empty"></div>
 					<h3 className="heading">I wonder where my money went</h3>
 					<p className="teaser">

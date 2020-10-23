@@ -2,7 +2,7 @@ import Navigation from "../components/Navigation"
 import WithForm from "../components/withForm"
 import useSWR from "swr"
 import Head from "next/head"
-import CareerOG from "../components/cards/CareerOG"
+import CareerOG from "../components/og/CareerOG"
 import Footer from "../components/Footer"
 import { GiDiploma } from "react-icons/gi"
 import { GiBookshelf } from "react-icons/gi"
@@ -119,7 +119,7 @@ export default function Career() {
 										</span>
 									</li>
 									<li className="step step--celebrate">
-										<span className="heading">
+										<span className="hl--lead">
 											Congratulate yourself already
 										</span>{" "}
 										- Some people would let opportunities pass without even
@@ -128,7 +128,7 @@ export default function Career() {
 										you'll fall in love going.
 									</li>
 									<li className="step step--prepare">
-										<span className="heading">
+										<span className="hl--lead">
 											Prepare yourself for the great journey
 										</span>{" "}
 										- If you are willing to learn, there will be no stopping you

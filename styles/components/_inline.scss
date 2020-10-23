@@ -1,0 +1,37 @@
+@import "../common/variables.scss";
+
+.hl {
+	font-size: 110%;
+	font-weight: 700;
+	color: black;
+
+	&--dad {
+		@extend .hl;
+		text-shadow: 0.1rem 0.1rem 0.2rem purple;
+	}
+
+	&--red {
+		@extend .hl;
+		text-shadow: 0.1rem 0.1rem 0.1rem $primary;
+	}
+
+	&--green {
+		@extend .hl;
+		text-shadow: 0.1rem 0.1rem 0.1rem lightgreen;
+	}
+
+	&--dummies {
+		@extend .title;
+		text-shadow: 0.1rem 0.1rem 0.2rem yellow;
+	}
+
+	&--int {
+		@extend .title;
+		text-shadow: 0.1rem 0.1rem 0.2rem $primary;
+	}
+
+	&--lead {
+		font-size: 110%;
+		font-weight: 700;
+	}
+}

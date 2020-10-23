@@ -44,6 +44,9 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+@import "./components/graphics.scss";
+@import "./components/inline.scss";
+@import "./components/cards";
 @import "./components/list";
 @import "./components/error";
 @import "./components/footer";

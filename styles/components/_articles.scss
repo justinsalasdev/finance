@@ -54,6 +54,10 @@
 			width: 100%;
 			height: 20rem;
 
+			&--advisor {
+				background: url("/images/advisor.jpg") center / cover no-repeat;
+			}
+
 			&--scratch {
 				background: url("/images/invest.jpg") center / cover no-repeat;
 			}
