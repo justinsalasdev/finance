@@ -5,6 +5,7 @@ import { AiOutlinePieChart } from "react-icons/ai"
 import { AiOutlineAppstoreAdd } from "react-icons/ai"
 import { RiRefund2Fill } from "react-icons/ri"
 import Head from "next/head"
+import Footer from "../components/Footer"
 
 export default function Track() {
 	return (
@@ -105,6 +106,7 @@ export default function Track() {
 					</ul>
 				</div>
 			</main>
+			<Footer />
 		</>
 	)
 }

@@ -15,9 +15,19 @@
 	}
 
 	&__heading2 {
+		font-family: "just another hand";
+		font-weight: 400;
 		padding-top: 0.5rem;
 		margin: 2rem auto 1rem auto;
 		border-top: 0.1rem solid rgba(black, 0.2);
+	}
+
+	&__heading3 {
+		font-weight: 400;
+		font-family: "just another hand";
+		padding-top: 0.5rem;
+		margin: 1rem auto 0 auto;
+		font-size: 4.5rem;
 	}
 
 	&__graphics {
@@ -162,6 +172,8 @@
 				display: flex;
 				flex-direction: column;
 				align-items: stretch;
+				height: auto;
+
 				& li {
 					height: auto;
 					min-height: 15rem;

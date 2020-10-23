@@ -3,6 +3,7 @@ import { RiStore2Line } from "react-icons/ri"
 import { RiBuilding2Line } from "react-icons/ri"
 import { AiOutlinePieChart } from "react-icons/ai"
 import Head from "next/head"
+import Footer from "../components/Footer"
 
 export default function Starter() {
 	return (
@@ -64,7 +65,7 @@ export default function Starter() {
 						doing something in particular, should do
 					</p>
 					<p className="blog__content">
-						I know that my fresh grad salary won't get me started on real estate
+						I know that my fresh grad salary won't get me started in real estate
 						and I'm still naive to go on a venture -- so maybe part owning a
 						small portion of someone else's business isn't that bad of a
 						decision.
@@ -76,11 +77,12 @@ export default function Starter() {
 						stocks) of a business is not a mystery. With little googling and a
 						little bit of money , I ended up opening an account with First Metro
 						and was ready to buy my first share -- but what exactly should I
-						buy? It was at that moment that I knew --{" "}
+						buy? It was at that moment that I knew--{" "}
 					</p>
 					<p className="blog__content">
-						I realized I'm not yet ready to do my first purchase so I consulted
-						again my best friend Google. He introduced me to a book called{" "}
+						I realized I'm not yet ready to make my first purchase so I
+						consulted again my best friend Google. He introduced me to a book
+						called{" "}
 						<span className="title--intelligent">The Intelligent Investor</span>{" "}
 						-- written by Benjamin Graham : the greatest investor who ever lived
 						; teacher of the billionaire Warren Buffet
@@ -147,6 +149,7 @@ export default function Starter() {
 					</p>
 				</div>
 			</main>
+			<Footer />
 		</>
 	)
 }

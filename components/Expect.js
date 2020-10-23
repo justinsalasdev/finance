@@ -3,7 +3,7 @@ import { MdFace } from "react-icons/md"
 import { GrDiamond } from "react-icons/gr"
 import { RiDirectionFill } from "react-icons/ri"
 import { FaRegHandshake } from "react-icons/fa"
-import { CgTimelapse } from "react-icons/cg"
+// import { CgTimelapse } from "react-icons/cg"
 
 export default function Expect() {
 	return (
@@ -15,11 +15,12 @@ export default function Expect() {
 						<FaRegHandshake /> It's free
 					</h3>
 					<p>
-						Sharing financial literacy is our main goal. The feeling of having
-						impact to the lives of other people is priceless
+						Improving the financial health of those around us is our goal. The
+						feeling of having an impact on the lives of other people is
+						priceless
 					</p>
 				</li>
-				<li className="expect__item">
+				{/* <li className="expect__item">
 					<h3>
 						<CgTimelapse className="icon" /> Just a couple of minutes
 					</h3>
@@ -27,15 +28,15 @@ export default function Expect() {
 						We know that your time is valuable so we always try to make every
 						session brief and on point.
 					</p>
-				</li>
+				</li> */}
 				<li className="expect__item">
 					<h3>
 						<MdLockOutline className="icon" /> Private and confidential
 					</h3>
 					<p>
-						As licensed professional, It's part of our sworn duty to uphold your
-						best interest -- that includes keeping all the session information
-						between just the two of us, no one else.
+						As a licensed professional, It's part of our sworn duty to uphold
+						your best interest -- that includes keeping all the session
+						information between just the two of us, no one else.
 					</p>
 				</li>
 				<li className="expect__item">
@@ -43,9 +44,8 @@ export default function Expect() {
 						<MdFace className="icon" /> It's all about you
 					</h3>
 					<p>
-						Our job is centered into helping you achieve your financial goals
-						the best way possible. Whatever your goals may be, we'll sure be
-						there to help.
+						Our job is centered in helping you achieve your financial goals the
+						best way possible. Your best interest is always our utmost priority.
 					</p>
 				</li>
 				<li className="expect__item">
@@ -55,7 +55,7 @@ export default function Expect() {
 					</h3>
 					<p>
 						We base our recommendation from the information you give. Every
-						honest details you share will always be of your benefit.
+						honest detail you share will always be to your benefit.
 					</p>
 				</li>
 				<li className="expect__item">

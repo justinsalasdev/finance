@@ -8,6 +8,7 @@ import Articles from "../components/Articles"
 import WithForm from "../components/withForm"
 import HomeOG from "../components/og/HomeOG"
 import HomeCard from "../components/cards/HomeCard"
+import Footer from "../components/Footer"
 
 const formOptions = {
 	info: "Hi! I'll reach you thru your contact details",
@@ -42,10 +43,8 @@ export default function Home() {
 						<Navigation />
 						<main className="main main--home">
 							<h1 className="greet main__greet">
-								Hi
-								<FaRegSmileBeam className="greet__sun" /> I'm Justin, a Licensed
-								Consultant. I can help you be a financial success!{" "}
-								<BsGraphUp className="greet__coin" />
+								Hi! I'm Justin, a licensed consultant. I can help you be a
+								financial success! <BsGraphUp className="greet__coin" />
 							</h1>
 							<button
 								className="main__action button--success"
@@ -63,6 +62,7 @@ export default function Home() {
 							<hr />
 							<Articles />
 						</main>
+						<Footer />
 					</>
 				)
 			}}

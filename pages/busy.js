@@ -3,6 +3,7 @@ import Link from "next/link"
 import { FaRegCalendarCheck } from "react-icons/fa"
 import WithForm from "../components/withForm"
 import Head from "next/head"
+import Footer from "../components/Footer"
 
 const formOptions = {
 	url: "storeProspect",
@@ -186,6 +187,7 @@ export default function Busy() {
 								</div>
 							</div>
 						</main>
+						<Footer />
 					</>
 				)
 			}}

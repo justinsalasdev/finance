@@ -1,7 +1,7 @@
 import Link from "next/link"
 export default function Articles() {
 	return (
-		<section className="articles main__articles">
+		<section className="articles main__articles" id="articles">
 			<h2 className="articles__heading">Articles</h2>
 			<ul className="articles__list">
 				<li className="articles__item">
