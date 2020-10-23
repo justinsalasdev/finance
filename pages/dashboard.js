@@ -1,5 +1,5 @@
 import Head from "next/head"
-import CareerOG from "../components/cards/CareerOG"
+import CareerOG from "../components/og/CareerOG"
 import Footer from "../components/Footer"
 import Navigation from "../components/Navigation"
 
