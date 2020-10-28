@@ -34,4 +34,10 @@
 		font-size: 110%;
 		font-weight: 700;
 	}
+
+	&--black {
+		@extend .title;
+		text-shadow: 0.1rem 0.1rem 0.2rem green;
+		font-weight: 400;
+	}
 }

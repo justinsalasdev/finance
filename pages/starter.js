@@ -71,13 +71,13 @@ export default function Starter() {
 						decision.
 					</p>
 					<br />
-					<p className="card--stocks">
-						The act of buying <span className="keyword--black">portions</span>{" "}
-						or <span className="keyword--black">shares</span> (commonly known as
-						stocks) of a business is not a mystery. With little googling and a
-						little bit of money , I ended up opening an account with First Metro
-						and was ready to buy my first share -- but what exactly should I
-						buy? It was at that moment that I knew--{" "}
+					<p className="blog__content">
+						The act of buying <span className="hl--black">portions</span> or{" "}
+						<span className="hl--black">shares</span> (commonly known as stocks)
+						of a business is not a mystery. With little googling and a little
+						bit of money , I ended up opening an account with First Metro and
+						was ready to buy my first share -- but what exactly should I buy? It
+						was at that moment that I knew--{" "}
 					</p>
 					<p className="blog__content">
 						I realized I'm not yet ready to make my first purchase so I

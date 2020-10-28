@@ -4,9 +4,9 @@ import useSWR from "swr"
 import Head from "next/head"
 import CareerOG from "../components/og/CareerOG"
 import Footer from "../components/Footer"
-import { GiDiploma } from "react-icons/gi"
-import { GiBookshelf } from "react-icons/gi"
-import { FcManager } from "react-icons/fc"
+// import { GiDiploma } from "react-icons/gi"
+// import { GiBookshelf } from "react-icons/gi"
+// import { FcManager } from "react-icons/fc"
 
 const formOptions = {
 	info: "Please provide registration details",
@@ -50,7 +50,7 @@ export default function Career() {
 								How to be a financial consultant
 							</h1>
 							<hr className="blog" />
-							<section className="blog__body">
+							{/* <section className="blog__body">
 								<h2 className="blog__heading3">Qualifications</h2>
 								<ul className="list">
 									<li className="list__item">
@@ -65,10 +65,10 @@ export default function Career() {
 								</ul>
 							</section>
 
-							<hr className="blog" />
+							<hr className="blog" /> */}
 
 							<div className="blog__body">
-								<h2 className="blog__heading3">Steps</h2>
+								{/* <h2 className="blog__heading3">Steps</h2> */}
 								<ul className="blog__steps">
 									<li className="step step--outlook">
 										<span className="heading">Attend the Career Preview</span> -
