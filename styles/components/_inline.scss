@@ -40,4 +40,10 @@
 		text-shadow: 0.1rem 0.1rem 0.2rem green;
 		font-weight: 400;
 	}
+
+	&--gray {
+		@extend .title;
+		text-shadow: 0.1rem 0.1rem 0.1rem $black-light-20;
+		font-weight: 400;
+	}
 }

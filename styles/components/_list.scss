@@ -1,10 +1,47 @@
 .list {
-	padding-left: 1.2rem;
+	padding-left: 1.5rem;
+
+	.icon {
+		font-size: 3rem;
+		vertical-align: middle;
+
+		&--green {
+			color: green;
+		}
+
+		&--gold {
+			color: goldenrod;
+		}
+
+		&--blue {
+			color: blue;
+		}
+	}
+
+	&__item {
+		margin-top: 1.5rem;
+		&:first-of-type {
+			margin-top: 0;
+		}
+
+		&--single {
+			list-style: circle;
+			margin-top: 0.5rem;
+		}
+	}
+
 	&__heading {
 		padding: 0.5rem;
 		text-shadow: 0.1rem 0.1rem 0.1rem rgba($black-light-20, 0.5);
-		.icon {
-			vertical-align: middle;
-		}
+	}
+
+	&__paragraph {
+		display: inline-block;
+		text-align: justify;
+		text-indent: 6%;
+	}
+
+	&--single {
+		padding-left: 3rem;
 	}
 }

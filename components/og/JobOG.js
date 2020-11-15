@@ -6,7 +6,7 @@ export default function CareerOG() {
 			<meta property="og:url" content="https://save.justinsalas.cc/job" />
 			<meta
 				property="og:description"
-				content="You might be curious what financial advisors do for their clients and how they earn. Let me give you some insight."
+				content="You might be curious what financial advisors do for their clients. Let me give you some insight."
 			/>
 			<meta property="og:type" content="article" />
 			<meta

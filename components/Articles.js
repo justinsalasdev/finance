@@ -8,8 +8,8 @@ export default function Articles() {
 					<div className="banner banner--advisor"></div>
 					<h3 className="heading">An overview of my profession</h3>
 					<p className="teaser">
-						You might be curious what financial advisors do for their clients
-						and how they earn. Let me give you some insight.
+						You might be curious what financial advisors do for their clients.
+						Let me give you some insight.
 					</p>
 					<Link href="/job">
 						<a className="articles__link">read more</a>
