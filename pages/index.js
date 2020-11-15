@@ -1,9 +1,8 @@
 import { BsGraphUp } from "react-icons/bs"
-import { FaRegSmileBeam } from "react-icons/fa"
 import { FaRegCalendarCheck } from "react-icons/fa"
 import Head from "next/head"
 import Navigation from "../components/Navigation"
-import Expect from "../components/Expect"
+import Process from "../components/Process"
 import Articles from "../components/Articles"
 import WithForm from "../components/withForm"
 import HomeOG from "../components/og/HomeOG"
@@ -58,7 +57,7 @@ export default function Home() {
 								appointment
 							</button>
 							<hr className="home" />
-							<Expect />
+							<Process />
 							<hr />
 							<Articles />
 						</main>

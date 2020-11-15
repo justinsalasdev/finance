@@ -6,12 +6,12 @@ import { GrDocumentUser } from "react-icons/gr"
 import { GiCycle } from "react-icons/gi"
 // import { CgTimelapse } from "react-icons/cg"
 
-export default function Expect() {
+export default function Process() {
 	return (
-		<section className="expect main__expect">
-			<h2 className="expect__heading">The financial planning process</h2>
-			<ul className="expect__list">
-				<li className="expect__item">
+		<section className="process main__process">
+			<h2 className="process__heading">The financial planning process</h2>
+			<ul className="process__list">
+				<li className="process__item">
 					<h3>
 						1. Establish relationship <FaRegHandshake className="icon" />
 					</h3>
@@ -22,7 +22,7 @@ export default function Expect() {
 					</p>
 				</li>
 
-				<li className="expect__item">
+				<li className="process__item">
 					<h3>
 						2. Gather relevant information <GrDocumentUser className="icon" />
 					</h3>
@@ -31,7 +31,7 @@ export default function Expect() {
 						Every honest detail you share will always be to your benefit.
 					</p>
 				</li>
-				<li className="expect__item">
+				<li className="process__item">
 					<h3>
 						3. Analyze financial status <AiOutlineFileSearch className="icon" />
 					</h3>
@@ -40,7 +40,7 @@ export default function Expect() {
 						understand your current financial situation.
 					</p>
 				</li>
-				<li className="expect__item">
+				<li className="process__item">
 					<h3>
 						4. Develop and present recommendations{" "}
 						<GrWorkshop className="icon" />
@@ -51,7 +51,7 @@ export default function Expect() {
 						you may want or need to undertake.
 					</p>
 				</li>
-				<li className="expect__item">
+				<li className="process__item">
 					<h3>
 						5. Implementation <FaChartBar className="icon" />
 					</h3>
@@ -61,14 +61,14 @@ export default function Expect() {
 						will best cater to your financial needs.{" "}
 					</p>
 				</li>
-				<li className="expect__item">
+				<li className="process__item">
 					<h3>
 						5. Review <GiCycle className="icon" />
 					</h3>
 					<p>
 						We can't have a complete picture of what your life is going to be
-						like in the future - that's why it's beautiful. I'll be there along
-						the way to make adaptive changes if needed.
+						like in the future. Adaptive changes to the plan must be made as you
+						progress through the different chapters of your life.
 					</p>
 				</li>
 			</ul>
