@@ -1,13 +1,13 @@
 import Head from "next/head"
-import Footer from "./components/Footer"
-import Navigation from "./components/Navigation"
+import Footer from "../components/Footer"
+import Navigation from "../components/Navigation"
 import { FaHandHoldingUsd } from "react-icons/fa"
 import { RiFundsBoxLine } from "react-icons/ri"
 import { GiDiploma } from "react-icons/gi"
 import { FcDiploma2 } from "react-icons/fc"
 import { BsShieldShaded } from "react-icons/bs"
 import { BiCoinStack } from "react-icons/bi"
-import JobOG from "./components/og/JobOG"
+import JobOG from "../components/og/JobOG"
 
 export default function Job() {
 	return (
@@ -26,39 +26,32 @@ export default function Job() {
 				<h1 className="blog__heading">The financial planning process</h1>
 				<hr className="blog" />
 				<section className="blog__body">
-					<h2 className="blog__heading3 blog__heading3--formal">
-						Pre-planning
-					</h2>
-					<p className="blog__content card--blocks">
-						During consultation, clients share relevant information like, but
-						not limited to, their goals, income, expenses, assets and
-						liabilities. Using these data, the advisor will try to come up with
-						a model that best represents their current financial standing.
+					<h2 className="blog__heading3">Pre-planning</h2>
+					<p className="blog__content">
+						<span className="hl--green">Financial planning</span> may be a
+						fairly straightforward concept but how it’s done is not often clear.
+						By definition, it’s simple yet often misunderstood so it should be
+						approached from an objective standpoint.
 					</p>
 					<p className="blog__content">
-						Every client is unique and each requires a different approach to the
-						improvement or preservation of their financial health but most of
-						the time, solutions fall into these common financial planning areas
+						One of these three main objectives can be the reason why people
+						should consider financial planning.
 					</p>
 					<ul className="list">
 						<li className="list__item">
-							<RiFundsBoxLine className="icon" /> Medium to long term investment
+							<RiFundsBoxLine className="icon" /> To attain desired wealth –
+							People have a different perspective as to what being rich is. Some
+							want to have a luxurious lifestyle while others just want to have
+							the means to continue doing the things that they love to do.
+							Though given these different views, one thing’s certain – wealth
+							doesn’t happen overnight. It is a result of hard work, time, and
+							most importantly, careful planning.
 						</li>
 						<li className="list__item">
 							<FaHandHoldingUsd className="icon" /> Retirement
 						</li>
 						<li className="list__item">
 							<GiDiploma className="icon" /> Education
-						</li>
-						<li className="list__item">
-							<FcDiploma2 className="icon" /> Estate planning
-						</li>
-						<li className="list__item">
-							<BsShieldShaded className="icon" /> Income and asset protection
-						</li>
-						<li className="list__item">
-							<BiCoinStack className="icon" />
-							Tax planning
 						</li>
 					</ul>
 				</section>
