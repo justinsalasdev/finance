@@ -1,70 +1,74 @@
-import { MdLockOutline } from "react-icons/md"
-import { MdFace } from "react-icons/md"
-import { GrDiamond } from "react-icons/gr"
-import { RiDirectionFill } from "react-icons/ri"
+import { AiOutlineFileSearch } from "react-icons/ai"
+import { FaChartBar } from "react-icons/fa"
+import { GrWorkshop } from "react-icons/gr"
 import { FaRegHandshake } from "react-icons/fa"
+import { GrDocumentUser } from "react-icons/gr"
+import { GiCycle } from "react-icons/gi"
 // import { CgTimelapse } from "react-icons/cg"
 
 export default function Expect() {
 	return (
 		<section className="expect main__expect">
-			<h2 className="expect__heading">What to expect in a consultation</h2>
+			<h2 className="expect__heading">The financial planning process</h2>
 			<ul className="expect__list">
 				<li className="expect__item">
 					<h3>
-						<FaRegHandshake /> It's free
+						1. Establish relationship <FaRegHandshake className="icon" />
 					</h3>
 					<p>
-						Improving the financial health of those around us is our goal. The
-						feeling of having an impact on the lives of other people is
-						priceless
+						Financial planning is a long-term process, and for it to be
+						successful, teamwork and collaboration are required. With these, it
+						is of importance to know we're a good fit before we even start.
 					</p>
 				</li>
-				{/* <li className="expect__item">
-					<h3>
-						<CgTimelapse className="icon" /> Just a couple of minutes
-					</h3>
-					<p>
-						We know that your time is valuable so we always try to make every
-						session brief and on point.
-					</p>
-				</li> */}
+
 				<li className="expect__item">
 					<h3>
-						<MdLockOutline className="icon" /> Private and confidential
+						2. Gather relevant information <GrDocumentUser className="icon" />
 					</h3>
 					<p>
-						As a licensed professional, It's part of our sworn duty to uphold
-						your best interest -- that includes keeping all the session
-						information between just the two of us, no one else.
+						I base my recommendation from the financial information you'll give.
+						Every honest detail you share will always be to your benefit.
 					</p>
 				</li>
 				<li className="expect__item">
 					<h3>
-						<MdFace className="icon" /> It's all about you
+						3. Analyze financial status <AiOutlineFileSearch className="icon" />
 					</h3>
 					<p>
-						Our job is centered in helping you achieve your financial goals the
-						best way possible. Your best interest is always our utmost priority.
+						Before any advise is ever made, It is important that I fully
+						understand your current financial situation.
 					</p>
 				</li>
 				<li className="expect__item">
 					<h3>
-						<GrDiamond className="icon" /> Quality advice from quality
-						information
+						4. Develop and present recommendations{" "}
+						<GrWorkshop className="icon" />
 					</h3>
 					<p>
-						We base our recommendation from the information you give. Every
-						honest detail you share will always be to your benefit.
+						Taking into account your current financial standing and the goals
+						you want to achieve, I'll be able to construct sound options that
+						you may want or need to undertake.
 					</p>
 				</li>
 				<li className="expect__item">
 					<h3>
-						<RiDirectionFill /> You call the shots
+						5. Implementation <FaChartBar className="icon" />
 					</h3>
 					<p>
-						We'll give you valuable recommendations and you always have the
-						freedom to decide for yourself.
+						Even the best plan is just a plan if we don't take action to make it
+						happen. We will help you choose from lots of available tools that
+						will best cater to your financial needs.{" "}
+					</p>
+				</li>
+				<li className="expect__item">
+					<h3>
+						5. Review <GiCycle className="icon" />
+					</h3>
+					<p>
+						We can't have a complete picture of what your life is going to be
+						like in the future - that's why it's beautiful. I'll be there along
+						the way to make adaptive changes if needed.
 					</p>
 				</li>
 			</ul>

@@ -49,7 +49,7 @@ export default function Articles() {
 					</Link>
 				</li>
 
-				<li className="articles__item">
+				{/* <li className="articles__item">
 					<div className="banner banner--consultant"></div>
 					<h3 className="heading">How to be a Financial Consultant</h3>
 					<p className="teaser">
@@ -59,7 +59,7 @@ export default function Articles() {
 					<Link href="/career">
 						<a className="articles__link">read more</a>
 					</Link>
-				</li>
+				</li> */}
 			</ul>
 		</section>
 	)

@@ -21,11 +21,11 @@ export default function Navigation() {
 						<a className="navigation__link">Articles</a>
 					</CustomLink>
 				</li>
-				<li>
+				{/* <li>
 					<CustomLink href="/career">
 						<a className="navigation__link">Career</a>
 					</CustomLink>
-				</li>
+				</li> */}
 				<li>
 					{session && !loading && (
 						<CustomLink href="/dashboard">
