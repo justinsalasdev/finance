@@ -15,6 +15,11 @@
 		text-shadow: 0.1rem 0.1rem 0.1rem $primary;
 	}
 
+	&--blue {
+		@extend .hl;
+		text-shadow: 0.1rem 0.1rem 0.1rem lightblue;
+	}
+
 	&--green {
 		@extend .hl;
 		text-shadow: 0.1rem 0.1rem 0.1rem lightgreen;

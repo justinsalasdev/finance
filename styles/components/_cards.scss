@@ -135,10 +135,11 @@
 		.picture {
 			text-indent: 0;
 			text-align: left;
+			display: flex;
+			width: 10rem;
 			padding: 2rem;
 			margin: 1rem auto;
 			height: 20rem;
-			background-color: white;
 
 			&--seed {
 				color: $white-dark-10;

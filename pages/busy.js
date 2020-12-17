@@ -134,38 +134,43 @@ export default function Busy() {
 									workings of the stock market in general then it's better to
 									stay away from it - or you find someone who does.
 								</p>
-								<h3 className="blog__heading2">Mutual Funds</h3>
-								<div className="blog__content blog__content--mutual">
-									You might have heard or have read about mutual funds somewhere
-									but in case you haven't, here's what my simple mind
-									understands
-									<ul>
+								<h3 className="blog__heading2">Investment Funds</h3>
+								<div className="blog__content ">
+									You might have heard or have read about{" "}
+									<span className="hl--green">Mutual Funds</span> and
+									<span className="hl--blue">
+										{" "}
+										Unit Investment Trust Funds{" "}
+									</span>
+									somewhere but in case you haven't, here's how to put it in
+									simple terms
+									<ul className="picture__container">
 										<li className="picture picture--seed">
-											People give their seeds ( their money ) to a farmer{" "}
+											1. People give their seeds ( their money ) to a farmer{" "}
 											<a
 												className="link--text-light"
 												target="_blank"
 												href="https://www.investopedia.com/terms/m/moneymanager.asp#:~:text=key%20takeaways-,A%20money%20manager%20is%20a%20person%20or%20financial%20firm%20that,percentage%20of%20assets%20under%20management."
 											>
-												( Professional Money Manager )
+												( Professional Fund Manager )
 											</a>
 										</li>
 
 										<li className="picture picture--collect">
-											The farmer collectively plants (invest) and grows (manage)
-											those seeds in behalf of the owners
+											2. The farmer collectively plants (invest) and grows
+											(manage) those seeds in behalf of the owners
 										</li>
 
 										<li className="picture picture--labor">
-											The owners give the farmer small portion of their crops to
-											cover operating cost
+											3. The owners give the farmer small portion of their crops
+											to cover operating cost
 										</li>
 									</ul>
 								</div>
 								<p className="blog__content">
-									Getting started on mutual funds is easy given that we live in
-									a time where most of the information we need is right at our
-									finger tips. Fortunately, if you're the type of person who
+									Getting started on investment funds is easy given that we live
+									in a time where most of the information we need is right at
+									our finger tips. Fortunately, if you're the type of person who
 									understand the importance of investments but doesn't have time
 									other than for those things you love to do; you can always
 									seek guidance from us, licensed financial consultants -- our
